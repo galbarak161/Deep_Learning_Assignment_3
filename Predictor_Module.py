@@ -145,7 +145,7 @@ class LSTM_Predictor(nn.Module):
         self.train()
         for idx_batch, batch in enumerate(train_data_loader, start=1):
             x, x_len = batch.d
-            x.to(DEVICE)
+            x = x.to(DEVICE)
 
             self.optimizer.zero_grad()
             y_hat = self(x).to(DEVICE)
@@ -180,7 +180,7 @@ class LSTM_Predictor(nn.Module):
         with torch.no_grad():
             for idx_batch, batch in enumerate(data_loader, start=1):
                 x, x_len = batch.d
-                x.to(DEVICE)
+                x = x.to(DEVICE)
 
                 y_hat = self(x).to(DEVICE)
 
