@@ -5,6 +5,7 @@ from torchtext.legacy.data import Field, BucketIterator, TabularDataset
 
 
 def tokenize_dataframes(df_train, df_val, df_test):
+    # convert dataframes to files
     df_train.to_json('train.json', orient='records', lines=True)
     df_train.to_csv('train.csv', index=False)
     df_val.to_json('valid.json', orient='records', lines=True)

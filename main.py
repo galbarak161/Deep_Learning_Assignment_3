@@ -44,7 +44,7 @@ def main():
     vocab_length = len(field.vocab)
     pad_tokens = field.vocab.stoi['<pad>']
 
-    epochs = 2
+    epochs = 1
     model = LSTM_Predictor(vocab_length, embedding_dim=256, num_layers=2, h_dim=1024, ignore_index=pad_tokens)
     model.train_model(epochs, dl_train, dl_valid, dl_test)
 

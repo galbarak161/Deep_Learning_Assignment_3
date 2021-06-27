@@ -24,7 +24,7 @@ class LSTM_Predictor(nn.Module):
         self.log_softmax = nn.LogSoftmax(dim=2)
 
         self.optimizer = torch.optim.Adam(self.parameters(), lr=1e-2)
-        self.loss_fn = nn.CrossEntropyLoss(ignore_index=ignore_index)
+        self.loss_func = nn.CrossEntropyLoss(ignore_index=ignore_index)
 
         self.to(DEVICE)
 
@@ -78,9 +78,7 @@ class LSTM_Predictor(nn.Module):
 
         print('Train model...')
         for idx_epoch in range(epochs):
-            # Linearly decay amount of teacher forcing for the first 20 epochs (example)
-            p_tf = 1 - min((idx_epoch / 20), 1)
-
+            print(f'epoch number {idx_epoch}...')
             self.train_model_step(train_data_loader, 1.)
 
             # evaluate model over train and validation sets:
@@ -160,7 +158,7 @@ class LSTM_Predictor(nn.Module):
 
             # calculate loss now:
 
-            loss = self.loss_fn(y_hat, y_gt).to(DEVICE)
+            loss = self.loss_func(y_hat, y_gt).to(DEVICE)
             loss.backward()
 
             # prevent large gradients
