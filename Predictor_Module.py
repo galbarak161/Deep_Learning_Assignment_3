@@ -77,7 +77,6 @@ class LSTM_Predictor(nn.Module):
         best_epoch = 0
         early_stop_counter = 0
 
-        print('Train model...\n')
         for idx_epoch in range(epochs):
             print(f'epoch number {idx_epoch + 1}')
             self.train_model_step(train_data_loader, 1.)
@@ -196,7 +195,7 @@ class LSTM_Predictor(nn.Module):
                 y_hat = torch.argmax(y_hat, dim=2)
                 y_gt_indexes = y_gt != 1
                 accuracies.append(
-                    torch.sum(y_gt[y_gt_indexes] == y_hat[y_gt_indexes]) / (torch.sum(y_gt_indexes is True))
+                    torch.sum(y_gt[y_gt_indexes] == y_hat[y_gt_indexes]) / (torch.sum(y_gt_indexes == True))
                 )
 
         mean_acc = torch.mean(torch.FloatTensor(accuracies))
