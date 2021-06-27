@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from torch.nn import functional
 
 DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+MODEL_FILE_NAME = 'LTSM_model.pt'
 
 
 class LSTM_Predictor(nn.Module):
@@ -76,9 +77,9 @@ class LSTM_Predictor(nn.Module):
         best_epoch = 0
         early_stop_counter = 0
 
-        print('Train model...')
+        print('Train model...\n')
         for idx_epoch in range(epochs):
-            print(f'epoch number {idx_epoch}...')
+            print(f'epoch number {idx_epoch + 1}')
             self.train_model_step(train_data_loader, 1.)
 
             # evaluate model over train and validation sets:
@@ -96,7 +97,7 @@ class LSTM_Predictor(nn.Module):
                 min_val_loss = epoch_val_loss[0]
                 best_epoch = idx_epoch + 1
                 early_stop_counter = 0
-                torch.save(self.state_dict(), 'LTSM_model.pt')
+                torch.save(self.state_dict(), MODEL_FILE_NAME)
             else:
                 early_stop_counter += 1
 
@@ -105,7 +106,7 @@ class LSTM_Predictor(nn.Module):
 
         print('Evaluate model...')
         accuracy_test = self.evaluate_model(test_data_loader)[0]
-        torch.save(self.state_dict(), 'LTSM_model.pt')
+        torch.save(self.state_dict(), MODEL_FILE_NAME)
 
         # Plot accuracy & losses for train,val and test sets:
         fig = plt.figure()
@@ -195,7 +196,7 @@ class LSTM_Predictor(nn.Module):
                 y_hat = torch.argmax(y_hat, dim=2)
                 y_gt_indexes = y_gt != 1
                 accuracies.append(
-                    torch.sum(y_gt[y_gt_indexes] == y_hat[y_gt_indexes]) / (torch.sum(y_gt_indexes == True))
+                    torch.sum(y_gt[y_gt_indexes] == y_hat[y_gt_indexes]) / (torch.sum(y_gt_indexes is True))
                 )
 
         mean_acc = torch.mean(torch.FloatTensor(accuracies))
