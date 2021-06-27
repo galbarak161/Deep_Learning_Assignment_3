@@ -4,7 +4,7 @@ from words_generator import generate_words
 
 
 def main():
-    batch_size = 64
+    batch_size = 16
 
     # create data loaders from dataset
     print('Create data loaders from dataset...')
@@ -12,7 +12,7 @@ def main():
     vocab_length = len(field.vocab)
     pad_tokens = field.vocab.stoi['<pad>']
 
-    epochs = 1
+    epochs = 100
     print(f'Train model with {epochs}...')
     model = LSTM_Predictor(vocab_length, embedding_dim=256, num_layers=2, h_dim=1024, ignore_index=pad_tokens)
     model.train_model(epochs, dl_train, dl_valid, dl_test)
@@ -23,5 +23,4 @@ def main():
 
 
 if __name__ == "__main__":
-    print(DEVICE)
     main()
