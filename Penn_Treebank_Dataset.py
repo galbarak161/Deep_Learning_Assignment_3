@@ -1,8 +1,6 @@
 from os import path
 import spacy
 import pandas as pd
-import torchtext
-import torchtext.data as text_data
 from torchtext.legacy.data import Field, BucketIterator, TabularDataset
 
 
@@ -54,9 +52,6 @@ def load_datasets(batch_size: int):
 
     # create vocabulary
     generic_field.build_vocab(prc_train_data, min_freq=2)
-
-    topn = 30
-    print(f'TEXT top{topn}: {generic_field.vocab.itos[0:topn]}\n')
 
     # create data loaders (bucket iterators):
     dl_train, dl_valid, dl_test = BucketIterator.splits(
