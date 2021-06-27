@@ -1,5 +1,5 @@
-from Penn_Treebank_Dataset import load_datasets
-from Predictor_Module import LSTM_Predictor, DEVICE
+from pennTreebank_dataset import load_datasets
+from predictor_module import LSTM_Predictor, DEVICE
 from words_generator import generate_words
 
 
