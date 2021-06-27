@@ -21,7 +21,7 @@ def generate_words(empty_model, vocab, batch_size, max_generated_sequence=50):
     init_h0 = torch.randn(layers, batch_size, hidden_size).to(DEVICE)
     init_c0 = torch.randn(layers, batch_size, hidden_size).to(DEVICE)
 
-    tokenized_gen_words = model(init_words, "teacher_force", init_h0, init_c0).to(DEVICE)
+    tokenized_gen_words = model(init_words, "teacher_force", init_h0, init_c0)
 
     # untokenize words:
     for i in range(max_generated_sequence):
@@ -30,6 +30,7 @@ def generate_words(empty_model, vocab, batch_size, max_generated_sequence=50):
 
     tokenized_gen_words = np.array(tokenized_gen_words)
     tokenized_gen_words = np.transpose(tokenized_gen_words)
-    for i in range(max_generated_sequence):
-        print(f'sentence{i+1} = ')
-        print(np.array2string(tokenized_gen_words[i]))
+    with open('generated_sequences.txt', 'w', encoding="utf8") as f:
+        for i in range(max_generated_sequence):
+            f.write(f'\nSentence {i + 1}: {np.array2string(tokenized_gen_words[i])}\n')
+
