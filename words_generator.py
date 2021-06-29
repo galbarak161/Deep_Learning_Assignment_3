@@ -1,10 +1,7 @@
 import numpy as np
 import torch
 
-from predictor_module import MODEL_FILE_NAME
-
-
-# from predictor_module import DEVICE
+from predictor_module import MODEL_FILE_NAME, DEVICE
 
 
 def generate_words(empty_model, vocab, batch_size, max_generated_sequence=50):
@@ -19,9 +16,9 @@ def generate_words(empty_model, vocab, batch_size, max_generated_sequence=50):
     layers = model.num_layers
 
     # create initial h_0,c_0 and words:
-    init_words = torch.randint(5, 9700, (1, batch_size))  # .to(DEVICE)
-    init_h0 = torch.randn(layers, batch_size, hidden_size)  # .to(DEVICE)
-    init_c0 = torch.randn(layers, batch_size, hidden_size)  # .to(DEVICE)
+    init_words = torch.randint(5, 9700, (1, batch_size)).to(DEVICE)
+    init_h0 = torch.randn(layers, batch_size, hidden_size).to(DEVICE)
+    init_c0 = torch.randn(layers, batch_size, hidden_size).to(DEVICE)
 
     tokenized_gen_words = model(init_words, "teacher_force", init_h0, init_c0)
 

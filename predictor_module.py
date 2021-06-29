@@ -94,7 +94,7 @@ class LSTM_Predictor(nn.Module):
             if epoch_val_loss[0] < min_val_loss:
                 print(f'Current best model found in epoch = {idx_epoch + 1}')
                 min_val_loss = epoch_val_loss[0]
-                best_epoch = idx_epoch + 1
+                best_epoch = idx_epoch
                 early_stop_counter = 0
                 torch.save(self.state_dict(), MODEL_FILE_NAME)
             else:
@@ -126,6 +126,7 @@ class LSTM_Predictor(nn.Module):
         plot_title = "Model losses"
         plt.plot(losses_train, label='Train loss')
         plt.plot(losses_val, label='Validation loss')
+        plt.plot(epochs - 1, test_loss, marker='o', markersize=3, color='red', label='Final Test loss')
         plt.axvline(best_epoch, linestyle='--', color='r', label='Early Stopping Checkpoint')
         plt.title(plot_title)
         plt.plot()
@@ -139,7 +140,7 @@ class LSTM_Predictor(nn.Module):
               f'Avg Loss = {losses_train[best_epoch]:.2f}')
         print(f'Validation: Accuracy = {(accuracies_val[best_epoch] * 100):.2f}%, '
               f'Avg Loss = {losses_val[best_epoch]:.2f}')
-        print(f'Test: Accuracy = {(test_acc * 100):.2f}%, Avg Loss = {test_loss:.2f}')
+        print(f'Test: Accuracy = {(test_acc[0] * 100):.2f}%, Avg Loss = {test_loss[0]:.2f}')
         print()
 
     def train_model_step(self, train_data_loader, grad_clip=1.):
@@ -148,9 +149,8 @@ class LSTM_Predictor(nn.Module):
 
         for idx_batch, batch in enumerate(train_data_loader, start=1):
             x, x_len = batch.d
-            # x = x.to(DEVICE)
 
-            y_hat = self(x)  # .to(DEVICE)
+            y_hat = self(x)
 
             # estimate: X2,...,Xk to Y1,...,Yk-1.
             y_gt = x[1:, :]
@@ -162,7 +162,7 @@ class LSTM_Predictor(nn.Module):
 
             # calculate loss
             self.optimizer.zero_grad()
-            loss = self.loss_func(y_hat, y_gt)  # .to(DEVICE)
+            loss = self.loss_func(y_hat, y_gt)
             loss.backward()
 
             # prevent large gradients
@@ -182,9 +182,8 @@ class LSTM_Predictor(nn.Module):
         with torch.no_grad():
             for idx_batch, batch in enumerate(data_loader, start=1):
                 x, x_len = batch.d
-                # x = x.to(DEVICE)
 
-                y_hat = self(x)  # .to(DEVICE)
+                y_hat = self(x)
 
                 y_gt = x[1:, :]
                 y_hat = y_hat[:(y_hat.shape[0] - 1), :, :]
@@ -192,7 +191,7 @@ class LSTM_Predictor(nn.Module):
                 y_gt_reshaped = y_gt.reshape(S * B)
                 y_hat_reshaped = y_hat.reshape(S * B, V)
 
-                loss = self.loss_func(y_hat_reshaped, y_gt_reshaped)  # .to(DEVICE)
+                loss = self.loss_func(y_hat_reshaped, y_gt_reshaped)
                 losses.append(loss.item())
 
                 # we don't calculate <pad> words

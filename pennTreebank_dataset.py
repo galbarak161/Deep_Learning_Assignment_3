@@ -2,7 +2,6 @@ from os import path
 import spacy
 import pandas as pd
 from torchtext.legacy.data import Field, BucketIterator, TabularDataset
-
 from predictor_module import DEVICE
 
 
