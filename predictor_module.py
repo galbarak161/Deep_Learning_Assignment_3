@@ -70,7 +70,6 @@ class LSTM_Predictor(nn.Module):
         losses_val = []
         accuracies_train = []
         accuracies_val = []
-        accuracy_test = None
 
         # Early stop parameters:
         min_val_loss = np.inf
@@ -105,15 +104,15 @@ class LSTM_Predictor(nn.Module):
                 break
 
         print('Evaluate model...')
-        accuracy_test = self.evaluate_model(test_data_loader)[0]
-        torch.save(self.state_dict(), MODEL_FILE_NAME)
+        test_acc, test_loss = self.evaluate_model(test_data_loader)
+        self.load_state_dict(torch.load(MODEL_FILE_NAME))
 
         # Plot accuracy & losses for train,val and test sets:
         fig = plt.figure()
         plot_title = "Model Accuracies"
         plt.plot(accuracies_train, label='Train accuracy')
         plt.plot(accuracies_val, label='Validation accuracy')
-        plt.plot(epochs - 1, accuracy_test, marker='o', markersize=3, color='red', label='Final Test accuracy')
+        plt.plot(epochs - 1, test_acc, marker='o', markersize=3, color='red', label='Final Test accuracy')
         plt.axvline(best_epoch, linestyle='--', color='r', label='Early Stopping Checkpoint')
         plt.title(plot_title)
         plt.plot()
@@ -134,6 +133,14 @@ class LSTM_Predictor(nn.Module):
         fig.savefig(plot_title)
         plt.close(fig)
         plt.clf()
+
+        # final results
+        print(f'Train: Accuracy = {(accuracies_train[best_epoch] * 100):.2f}%, '
+              f'Avg Loss = {losses_train[best_epoch]:.2f}')
+        print(f'Validation: Accuracy = {(accuracies_val[best_epoch] * 100):.2f}%, '
+              f'Avg Loss = {losses_val[best_epoch]:.2f}')
+        print(f'Test: Accuracy = {(test_acc * 100):.2f}%, Avg Loss = {test_loss:.2f}')
+        print()
 
     def train_model_step(self, train_data_loader, grad_clip=1.):
         losses = []
