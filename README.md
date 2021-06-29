@@ -27,7 +27,5 @@ Train: Accuracy = 37.65%, Avg Loss = 3.63
 Validation: Accuracy = 34.41%, Avg Loss = 4.26
 Test: Accuracy = 35.57%, Avg Loss = 4.19
 
-Early stopping after 25 / 30 epohes
-
 	Time taken: 00:09:20.33
 ```

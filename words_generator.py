@@ -29,7 +29,10 @@ def generates_word_based_on_previous(empty_model, vocab, batch_size):
             untokenize_sequence = []
             f.write(f'\nSentence {sequence_counter}:\n')
             for token in sequence:
-                untokenize_sequence.append(vocab.itos[token])
+                word = vocab.itos[token]
+                if word == '<eos>':
+                    break
+                untokenize_sequence.append(word)
 
             untokenize_sequence = np.array(untokenize_sequence).T
             f.write(f'{untokenize_sequence}\n')

@@ -32,7 +32,10 @@ def main():
     model = LSTM_Predictor(
         vocab_length, embedding_dim=128, num_layers=2, h_dim=256, ignore_index=pad_tokens
     ).to(DEVICE)
+
     print(model)
+    print(f'number of parameters = {model.count_parameters()}')
+
     model.train_model(epochs, dl_train, dl_valid, dl_test)
     end_time = time.time()
     print_time(end_time - start_time)

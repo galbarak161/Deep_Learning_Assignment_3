@@ -29,6 +29,9 @@ class LSTM_Predictor(nn.Module):
 
         self.to(DEVICE)
 
+    def count_parameters(self):
+        return sum(p.numel() for p in self.parameters() if p.requires_grad)
+
     def forward(self, x, forward_mode="train", initial_vec_h0=None, initial_vec_c0=None):
         # this will be used upon training/generating by input
         if forward_mode == "train" or forward_mode == "gen_by_input":
