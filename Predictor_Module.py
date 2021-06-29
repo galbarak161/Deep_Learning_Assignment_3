@@ -24,7 +24,7 @@ class LSTM_Predictor(nn.Module):
         self.out_fc = nn.Linear(h_dim, vocab_size)
         self.log_softmax = nn.LogSoftmax(dim=2)
 
-        self.optimizer = torch.optim.Adam(self.parameters(), lr=1e-2)
+        self.optimizer = torch.optim.Adam(self.parameters(), betas=(0.9, 0.999), eps=1e-08)
         self.loss_func = nn.CrossEntropyLoss(ignore_index=ignore_index)
 
         self.to(DEVICE)
@@ -70,6 +70,7 @@ class LSTM_Predictor(nn.Module):
         losses_val = []
         accuracies_train = []
         accuracies_val = []
+        accuracy_test = None
 
         # Early stop parameters:
         min_val_loss = np.inf
@@ -79,7 +80,7 @@ class LSTM_Predictor(nn.Module):
 
         for idx_epoch in range(epochs):
             print(f'epoch number {idx_epoch + 1}')
-            self.train_model_step(train_data_loader, 1.)
+            self.train_model_step(train_data_loader)
 
             # evaluate model over train and validation sets:
             epoch_train_acc, epoch_train_loss = self.evaluate_model(train_data_loader)
@@ -92,7 +93,7 @@ class LSTM_Predictor(nn.Module):
 
             # update early stopping:
             if epoch_val_loss[0] < min_val_loss:
-                print(f'Best model found in epoch = {idx_epoch + 1}')
+                print(f'Current best model found in epoch = {idx_epoch + 1}')
                 min_val_loss = epoch_val_loss[0]
                 best_epoch = idx_epoch + 1
                 early_stop_counter = 0
@@ -138,15 +139,15 @@ class LSTM_Predictor(nn.Module):
         plt.close(fig)
         plt.clf()
 
-    def train_model_step(self, train_data_loader, clip_grad):
+    def train_model_step(self, train_data_loader, grad_clip=1.):
         losses = []
         self.train()
+
         for idx_batch, batch in enumerate(train_data_loader, start=1):
             x, x_len = batch.d
-            x = x.to(DEVICE)
+            #x = x.to(DEVICE)
 
-            self.optimizer.zero_grad()
-            y_hat = self(x).to(DEVICE)
+            y_hat = self(x)#.to(DEVICE)
 
             # estimate: X2,...,Xk to Y1,...,Yk-1.
             y_gt = x[1:, :]
@@ -156,19 +157,19 @@ class LSTM_Predictor(nn.Module):
             y_gt = y_gt.reshape(S * B)
             y_hat = y_hat.reshape(S * B, V)
 
-            # calculate loss now:
-
-            loss = self.loss_func(y_hat, y_gt).to(DEVICE)
+            # calculate loss
+            self.optimizer.zero_grad()
+            loss = self.loss_func(y_hat, y_gt)#.to(DEVICE)
             loss.backward()
 
             # prevent large gradients
-            if clip_grad > 0:
-                torch.nn.utils.clip_grad_norm_(self.parameters(), clip_grad)
+            if grad_clip > 0:
+                torch.nn.utils.clip_grad_norm_(self.parameters(), grad_clip)
 
             self.optimizer.step()
             losses.append(loss.item())
 
-        return [torch.mean(torch.FloatTensor(losses))]
+        return [np.mean(np.asarray(losses))]
 
     def evaluate_model(self, data_loader):
         accuracies = []
@@ -178,9 +179,9 @@ class LSTM_Predictor(nn.Module):
         with torch.no_grad():
             for idx_batch, batch in enumerate(data_loader, start=1):
                 x, x_len = batch.d
-                x = x.to(DEVICE)
+                #x = x.to(DEVICE)
 
-                y_hat = self(x).to(DEVICE)
+                y_hat = self(x)#.to(DEVICE)
 
                 y_gt = x[1:, :]
                 y_hat = y_hat[:(y_hat.shape[0] - 1), :, :]
@@ -188,7 +189,7 @@ class LSTM_Predictor(nn.Module):
                 y_gt_reshaped = y_gt.reshape(S * B)
                 y_hat_reshaped = y_hat.reshape(S * B, V)
 
-                loss = self.loss_func(y_hat_reshaped, y_gt_reshaped).to(DEVICE)
+                loss = self.loss_func(y_hat_reshaped, y_gt_reshaped)#.to(DEVICE)
                 losses.append(loss.item())
 
                 # we don't calculate <pad> words
