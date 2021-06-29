@@ -3,6 +3,8 @@ import spacy
 import pandas as pd
 from torchtext.legacy.data import Field, BucketIterator, TabularDataset
 
+from predictor_module import DEVICE
+
 
 def tokenize_dataframes(df_train, df_val, df_test):
     # convert dataframes to files
@@ -20,8 +22,7 @@ def tokenize_dataframes(df_train, df_val, df_test):
                       init_token='<sos>',
                       eos_token='<eos>',
                       include_lengths=True,
-                      lower=True,
-                      stop_words=["<", ">", ".", " ", "-"])
+                      lower=True)
 
     return Field(tokenizer_language="en_core_web_sm", **field_args)
 
@@ -58,7 +59,9 @@ def load_datasets(batch_size: int):
     dl_train, dl_valid, dl_test = BucketIterator.splits(
         (prc_train_data, prc_val_data, prc_test_data),
         batch_size=batch_size,
-        sort=False
+        sort=False,
+        shuffle=True,
+        device=DEVICE
     )
 
     return dl_train, dl_valid, dl_test, generic_field
