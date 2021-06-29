@@ -1,10 +1,8 @@
-from datetime import time
-
-from torchsummary import summary
-
+import time
 from pennTreebank_dataset import load_datasets
 from predictor_module import LSTM_Predictor, DEVICE
 from words_generator import generate_words
+
 
 def print_time(time_taken: float) -> None:
     """
@@ -14,6 +12,7 @@ def print_time(time_taken: float) -> None:
     hours, rem = divmod(time_taken, 3600)
     minutes, seconds = divmod(rem, 60)
     print("\tTime taken: {:0>2}:{:0>2}:{:05.2f}\n".format(int(hours), int(minutes), seconds))
+
 
 def main():
     batch_size = 16

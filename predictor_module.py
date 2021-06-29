@@ -148,9 +148,9 @@ class LSTM_Predictor(nn.Module):
 
         for idx_batch, batch in enumerate(train_data_loader, start=1):
             x, x_len = batch.d
-            #x = x.to(DEVICE)
+            # x = x.to(DEVICE)
 
-            y_hat = self(x)#.to(DEVICE)
+            y_hat = self(x)  # .to(DEVICE)
 
             # estimate: X2,...,Xk to Y1,...,Yk-1.
             y_gt = x[1:, :]
@@ -162,7 +162,7 @@ class LSTM_Predictor(nn.Module):
 
             # calculate loss
             self.optimizer.zero_grad()
-            loss = self.loss_func(y_hat, y_gt)#.to(DEVICE)
+            loss = self.loss_func(y_hat, y_gt)  # .to(DEVICE)
             loss.backward()
 
             # prevent large gradients
@@ -182,9 +182,9 @@ class LSTM_Predictor(nn.Module):
         with torch.no_grad():
             for idx_batch, batch in enumerate(data_loader, start=1):
                 x, x_len = batch.d
-                #x = x.to(DEVICE)
+                # x = x.to(DEVICE)
 
-                y_hat = self(x)#.to(DEVICE)
+                y_hat = self(x)  # .to(DEVICE)
 
                 y_gt = x[1:, :]
                 y_hat = y_hat[:(y_hat.shape[0] - 1), :, :]
@@ -192,7 +192,7 @@ class LSTM_Predictor(nn.Module):
                 y_gt_reshaped = y_gt.reshape(S * B)
                 y_hat_reshaped = y_hat.reshape(S * B, V)
 
-                loss = self.loss_func(y_hat_reshaped, y_gt_reshaped)#.to(DEVICE)
+                loss = self.loss_func(y_hat_reshaped, y_gt_reshaped)  # .to(DEVICE)
                 losses.append(loss.item())
 
                 # we don't calculate <pad> words
