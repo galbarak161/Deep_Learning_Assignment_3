@@ -8,11 +8,8 @@ from predictor_module import DEVICE
 def tokenize_dataframes(df_train, df_val, df_test):
     # convert dataframes to files
     df_train.to_json('train.json', orient='records', lines=True)
-    df_train.to_csv('train.csv', index=False)
     df_val.to_json('valid.json', orient='records', lines=True)
-    df_val.to_csv('valid.csv', index=False)
     df_test.to_json('test.json', orient='records', lines=True)
-    df_test.to_csv('test.csv', index=False)
 
     spacy.load('en_core_web_sm')
 
@@ -42,7 +39,7 @@ def load_datasets(batch_size: int):
     df_val = pd.DataFrame({'data': [line for line in val_data]}, columns=['data'])
     df_test = pd.DataFrame({'data': [line for line in test_data]}, columns=['data'])
 
-    # convert data to json / csv for tokenization
+    # convert data to json for tokenization
     generic_field = tokenize_dataframes(df_train, df_val, df_test)
     fields = {'data': ('d', generic_field)}
 

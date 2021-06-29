@@ -52,15 +52,13 @@ class LSTM_Predictor(nn.Module):
                 if i == 0:  # for the 1st block:
                     embedded = self.embedding(x)
                     y_t, (h_t, c_t) = self.lstm(embedded, (initial_vec_h0, initial_vec_c0))
-                    y_t = self.out_fc(y_t)
-                    y_t = torch.argmax(y_t, dim=2)
 
                 else:  # for the 2nd+ blocks:
                     embedded = self.embedding(y_t)
                     y_t, (h_t, c_t) = self.lstm(embedded, (h_t, c_t))
-                    y_t = self.out_fc(y_t)
-                    y_t = torch.argmax(y_t, dim=2)
 
+                y_t = self.out_fc(y_t)
+                y_t = torch.argmax(y_t, dim=2)
                 generated_sentence += y_t.tolist()
 
             return generated_sentence
@@ -104,8 +102,8 @@ class LSTM_Predictor(nn.Module):
                 break
 
         print('Evaluate model...')
-        test_acc, test_loss = self.evaluate_model(test_data_loader)
         self.load_state_dict(torch.load(MODEL_FILE_NAME))
+        test_acc, test_loss = self.evaluate_model(test_data_loader)
 
         # Plot accuracy & losses for train,val and test sets:
         fig = plt.figure()
@@ -164,8 +162,7 @@ class LSTM_Predictor(nn.Module):
             loss.backward()
 
             # prevent large gradients
-            if grad_clip > 0:
-                torch.nn.utils.clip_grad_norm_(self.parameters(), grad_clip)
+            torch.nn.utils.clip_grad_norm_(self.parameters(), grad_clip)
 
             self.optimizer.step()
             losses.append(loss.item())

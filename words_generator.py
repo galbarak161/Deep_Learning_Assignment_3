@@ -4,7 +4,7 @@ import torch
 from predictor_module import MODEL_FILE_NAME, DEVICE
 
 
-def generate_words(empty_model, vocab, batch_size, max_generated_sequence=50):
+def generates_word_based_on_previous(empty_model, vocab, batch_size):
     # load model parameters
     model = empty_model
     if torch.cuda.is_available():
@@ -16,19 +16,22 @@ def generate_words(empty_model, vocab, batch_size, max_generated_sequence=50):
     layers = model.num_layers
 
     # create initial h_0,c_0 and words:
-    init_words = torch.randint(5, 9700, (1, batch_size)).to(DEVICE)
+    init_words = torch.randint(4, len(vocab) - 1, (1, batch_size)).to(DEVICE)
     init_h0 = torch.randn(layers, batch_size, hidden_size).to(DEVICE)
     init_c0 = torch.randn(layers, batch_size, hidden_size).to(DEVICE)
 
-    tokenized_gen_words = model(init_words, "teacher_force", init_h0, init_c0)
+    tokenize_gen_sequences = model(init_words, "teacher_force", init_h0, init_c0)
 
-    # untokenize words:
-    for i in range(max_generated_sequence):
-        for j in range(batch_size):
-            tokenized_gen_words[i][j] = vocab.itos[tokenized_gen_words[i][j]]
-
-    tokenized_gen_words = np.array(tokenized_gen_words)
-    tokenized_gen_words = np.transpose(tokenized_gen_words)
+    sequence_counter = 1
     with open('Generated Sequences.txt', 'w', encoding="utf8") as f:
-        for i in range(max_generated_sequence):
-            f.write(f'\nSentence {i + 1}:\n{np.array2string(tokenized_gen_words[i])}\n')
+        f.write('\nGenerates words based on previous one:\n')
+        for sequence in tokenize_gen_sequences:
+            untokenize_sequence = []
+            f.write(f'\nSentence {sequence_counter}:\n')
+            for token in sequence:
+                untokenize_sequence.append(vocab.itos[token])
+
+            untokenize_sequence = np.array(untokenize_sequence).T
+            f.write(f'{untokenize_sequence}\n')
+            sequence_counter += 1
+
