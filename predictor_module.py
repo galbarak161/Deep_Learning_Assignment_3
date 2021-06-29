@@ -112,7 +112,6 @@ class LSTM_Predictor(nn.Module):
         plot_title = "Model Accuracies"
         plt.plot(accuracies_train, label='Train accuracy')
         plt.plot(accuracies_val, label='Validation accuracy')
-        plt.plot(epochs - 1, test_acc, marker='o', markersize=3, color='red', label='Final Test accuracy')
         plt.axvline(best_epoch, linestyle='--', color='r', label='Early Stopping Checkpoint')
         plt.title(plot_title)
         plt.plot()
@@ -126,7 +125,6 @@ class LSTM_Predictor(nn.Module):
         plot_title = "Model losses"
         plt.plot(losses_train, label='Train loss')
         plt.plot(losses_val, label='Validation loss')
-        plt.plot(epochs - 1, test_loss, marker='o', markersize=3, color='red', label='Final Test loss')
         plt.axvline(best_epoch, linestyle='--', color='r', label='Early Stopping Checkpoint')
         plt.title(plot_title)
         plt.plot()

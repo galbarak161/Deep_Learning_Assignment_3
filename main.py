@@ -16,7 +16,7 @@ def print_time(time_taken: float) -> None:
 
 def main():
     batch_size = 64
-    epochs = 50
+    epochs = 30
 
     # create data loaders from dataset
     start_time = time.time()
