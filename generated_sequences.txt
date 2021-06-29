@@ -1,0 +1,160 @@
+
+Sentence 1:
+['comparable' 'firm' 'return' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex']
+
+Sentence 2:
+['alter' 'awaiting' 'oak' 'return' 'sounds' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex']
+
+Sentence 3:
+['addition' 'step' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex']
+
+Sentence 4:
+['honesty' 'around' 'adjusters' 'complex' 'women' 'women' 'women' 'women'
+ 'women' 'women' 'women' 'women' 'women' 'women' 'women' 'women' 'women'
+ 'women' 'women' 'women' 'women' 'women' 'women' 'women' 'women' 'women'
+ 'women' 'women' 'women' 'women' 'women' 'women' 'women' 'women' 'women'
+ 'women' 'women' 'women' 'women' 'women' 'women' 'women' 'women' 'women'
+ 'women' 'women' 'women' 'women' 'women' 'women']
+
+Sentence 5:
+['concord' 'banker' 'slightly' 'adjusters' 'women' 'women' 'women' 'step'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex']
+
+Sentence 6:
+['ringing' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex']
+
+Sentence 7:
+['studies' 'hearings' 'complex' 'complex' 'complex' 'complex' 'step'
+ 'edward' 'step' 'edward' 'step' 'edward' 'step' 'edward' 'step' 'edward'
+ 'step' 'edward' 'step' 'edward' 'step' 'edward' 'step' 'edward' 'step'
+ 'edward' 'step' 'edward' 'step' 'edward' 'step' 'edward' 'step' 'edward'
+ 'step' 'edward' 'step' 'edward' 'step' 'edward' 'step' 'edward' 'step'
+ 'edward' 'step' 'edward' 'step' 'edward' 'step' 'edward']
+
+Sentence 8:
+['virginia' 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction']
+
+Sentence 9:
+['urgency' 'women' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex']
+
+Sentence 10:
+['nguyen' 'complex' 'step' 'complex' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction'
+ 'construction' 'construction' 'construction' 'construction']
+
+Sentence 11:
+['circuit' 'return' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex']
+
+Sentence 12:
+['members' 'except' 'edward' 'step' 'complex' 'step' 'complex' 'complex'
+ 'complex' 'step' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex']
+
+Sentence 13:
+['say' 'angeles' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex']
+
+Sentence 14:
+['wanted' 'machine' 'step' 'edward' 'step' 'edward' 'step' 'edward' 'step'
+ 'edward' 'step' 'edward' 'step' 'edward' 'step' 'edward' 'step' 'edward'
+ 'step' 'edward' 'step' 'edward' 'step' 'edward' 'step' 'edward' 'step'
+ 'edward' 'step' 'edward' 'step' 'edward' 'step' 'edward' 'step' 'edward'
+ 'step' 'edward' 'step' 'edward' 'step' 'edward' 'step' 'edward' 'step'
+ 'edward' 'step' 'edward' 'step' 'edward']
+
+Sentence 15:
+['school' 'return' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex']
+
+Sentence 16:
+['nonetheless' 'deaths' 'everyone' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex' 'complex' 'complex' 'complex' 'complex' 'complex' 'complex'
+ 'complex']
