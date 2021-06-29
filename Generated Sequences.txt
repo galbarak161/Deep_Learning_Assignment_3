@@ -1,0 +1,497 @@
+
+Sentence 1:
+['drink' 'improvements' 'stream' 'whichever' 'refineries' 'whichever'
+ 'refineries' 'policyholders' 'momentum' 'abroad' 'widens' 'artificially'
+ 'format' 'incurred' 'artificially' 'vacancy' 'widens' 'artificially'
+ 'format' 'incurred' 'artificially' 'refined' 'redemptions' 'refined'
+ 'widens' 'wires' 'rain' 'widens' 'artificially' 'refined' 'morale'
+ 'widens' 'dependents' 'refineries' 'audio' 'refineries' 'widens'
+ 'satisfactory' 'refineries' 'whichever' 'refineries' 'whichever' 'widens'
+ 'whichever' 'widens' 'momentum' 'dependents' 'reinvest' 'temperatures'
+ 'widens']
+
+Sentence 2:
+['swing' 'scattered' 'vault' 'offs' 'weekes' 'm' 'kong' '<sos>' ' '
+ 'separately' 'backer' 'middlemen' 'splitting' 'illustrate' 'incomplete'
+ 'seeds' 'rulings' 'successfully' 'adopt' 'streamlining' 'cocom' 'rulings'
+ 'suggesting' 'false' 'eagerness' 'receives' 'uncertainties' 'exclusively'
+ 'owed' 'abroad' 'abroad' 'addresses' 'abroad' 'abroad' 'uncertainties'
+ 'dump' 'abroad' 'addresses' 'donoghue' 'refineries' 'prescribed' 'abroad'
+ 'donoghue' 'conspired' 'owed' 'abroad' 'abroad' 'donoghue' 'conspired'
+ 'suggesting']
+
+Sentence 3:
+['efficiently' 'programmers' 'zoete' 'zoete' '<sos>' ' ' 'separately'
+ 'mobil' 'emerged' 'incurred' 'solid' 'middlemen' 'owed' 'misleading'
+ 'hands' 'narrowed' 'finishing' 'solid' 'surprises' 'shipped' 'surprises'
+ 'hands' 'surprises' 'hands' 'swaps' 'newsletters' 'exclusively' 'shipped'
+ 'prescribed' 'finishing' 'heavier' 'deductible' 'capitalization'
+ 'surprises' 'seeds' 'snapped' 'solid' 'capitalization' 'surprises'
+ 'prescribed' 'heavier' 'deductible' 'prescribed' 'prescribed'
+ 'equivalents' 'widens' 'severance' 'fluctuations' 'widens' 'abroad']
+
+Sentence 4:
+['ambrosiano' 'interview' 'warnings' 'settled' 'swelled' 'quotes'
+ 'indicating' 'cascade' 'cent' 'offs' 'cent' 'offs' 'cent' 'offs'
+ 'forward' 'offs' 'cent' 'offs' 'cent' 'offs' 'cent' 'offs' 'cent' 'offs'
+ 'cent' 'cent' 'offs' 'cent' 'offs' 'inch' 'offs' 'tightly' '<sos>' ' '
+ 'citicorp' 'exported' 'sagged' 'buffer' 'expectations' 'conditional'
+ 'surprises' 'knocking' 'capacity' 'prescribed' 'penalties' 'owed'
+ 'evenly' 'exclusively' 'abroad' 'donoghue']
+
+Sentence 5:
+['aeronautics' 'zoete' 'zoete' '<sos>' ' ' 'separately' 'citicorp'
+ 'sequester' 'negotiations' 'extended' 'coverage' 'subsidy' 'pushed'
+ 'into' 'streamlining' 'duty' 'middlemen' 'borrow' 'owed' 'respectable'
+ 'owed' 'severance' 'fluctuations' 'owed' 'poorer' 'economies'
+ 'prescribed' 'equivalents' 'widens' 'mental' 'refineries' 'abroad'
+ 'abroad' 'abroad' 'dependents' 'reinvest' 'temperatures' 'widens'
+ 'abroad' 'abroad' 'donoghue' 'conspired' 'widens' 'artificially'
+ 'midyear' 'widens' 'dependents' 'refineries' 'artificially' 'format']
+
+Sentence 6:
+['parties' 'entering' 'december' 'connecticut' 'sheets' 'carries' 'float'
+ 'subscriber' 'shed' 'cent' 'float' 'float' 'cent' 'float' 'cent' 'cent'
+ 'float' 'cent' 'cent' 'float' 'shed' 'cent' 'cent' 'float' 'cent' 'cent'
+ 'down' 'indicating' 'cent' 'offs' 'cent' 'offs' 'cent' 'offs' 'cent'
+ 'offs' 'cent' 'offs' 'cent' 'offs' 'cent' 'cent' 'cent' 'offs' 'cent'
+ 'offs' 'cent' 'offs' 'cent' 'cent']
+
+Sentence 7:
+['irrelevant' 'surpluses' 'computerized' 'stockholders' 'indicate'
+ 'completion' 'relevant' 'refineries' 'billing' 'widens' 'artificially'
+ 'format' 'incurred' 'outweigh' 'dependents' 'rain' 'reinvest'
+ 'artificially' 'images' 'widens' 'dependents' 'refineries' 'abroad'
+ 'widens' 'plummet' 'widens' 'satisfactory' 'refineries' 'overseeing'
+ 'entering' 'entering' 'conservatorship' 'widens' 'satisfactory'
+ 'refineries' 'performed' 'tightening' 'artificially' 'computerized'
+ 'refineries' 'tie' 'artificially' 'scramble' 'policyholders' 'tightening'
+ 'bronfman' 'refineries' 'billing' 'widens' 'satisfactory']
+
+Sentence 8:
+['demonstration' 'afloat' 've' 'zoete' '<sos>' ' ' 'separately' 'carnival'
+ 'emerged' 'informed' 'extended' 'penalties' 'totaling' 'stream'
+ 'improvements' 'improvements' 'improvements' 'surprises' 'shipped'
+ 'prescribed' 'penalties' 'owed' 'evenly' 'capitalization'
+ 'capitalization' 'surprises' 'drew' 'deductible' 'capitalization'
+ 'surprises' 'abroad' 'abroad' 'abroad' 'abroad' 'finishing'
+ 'capitalization' 'surprises' 'capitalization' 'surprises' 'abroad'
+ 'abroad' 'abroad' 'abroad' 'dependents' 'middlemen' 'hurting' 'abroad'
+ 'temperatures' 'prescribed' 'tuition']
+
+Sentence 9:
+['subsidize' 'tesoro' 'prebon' 'amicable' 'placement' 'widening'
+ 'exposures' 'owed' 'speeds' 'widens' 'artificially' 'bronfman'
+ 'refineries' 'artificially' 'refined' 'digest' 'widens' 'artificially'
+ 'refined' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest']
+
+Sentence 10:
+['boasts' ' ' 'citicorp' 'middlemen' 'informed' 'banning' 'duty' 'subsidy'
+ 'knocking' 'abroad' 'swing' 'exclusively' 'below' 'improvements'
+ 'uncertainties' 'respectable' 'minus' 'artificially' 'exclusively'
+ 'exclusively' 'surprises' 'abroad' 'abroad' 'abroad' 'uncertainties'
+ 'temperatures' 'widens' 'abroad' 'abroad' 'donoghue' 'conspired' 'widens'
+ 'banxquote' 'abroad' 'abroad' 'donoghue' 'receives' 'excited' 'billing'
+ 'widens' 'abroad' 'billing' 'widens' 'abroad' 'inspection' 'widens'
+ 'mental' 'amicable' 'unrest' 'temperatures']
+
+Sentence 11:
+['disobedience' 'portfolios' 'daughter' 'here' 'surely' 'routinely'
+ 'resemble' 'anywhere' 'anywhere' 'anywhere' 'prescribed' 'hands'
+ 'prescribed' 'abroad' 'prescribed' 'temperatures' 'temperatures'
+ 'prescribed' 'abroad' 'towers' 'palm' 'palm' 'equivalents' 'equivalents'
+ 'widens' 'mental' 'refineries' 'prescribed' 'donoghue' 'palm' 'palm'
+ 'bronfman' 'digest' 'digest' 'equivalents' 'equivalents' 'equivalents'
+ 'equivalents' 'equivalents' 'equivalents' 'equivalents' 'equivalents'
+ 'equivalents' 'equivalents' 'equivalents' 'owed' 'artificially' 'widens'
+ 'artificially' 'rebounding']
+
+Sentence 12:
+['betting' ' ' 'army' 'coach' 'images' 'palm' 'palm' 'palm' 'palm'
+ 'respectively' 'palm' 'palm' 'palm' 'palm' 'equivalents' 'respectively'
+ 'widens' 'mental' 'amicable' 'unrest' 'widens' 'dependents' 'refineries'
+ 'temperatures' 'widens' 'satisfactory' 'refineries' 'temperatures'
+ 'widens' 'satisfactory' 'refineries' 'prescribed' 'refined' 'widens'
+ 'dependents' 'refineries' 'abroad' 'widens' 'artificially' 'refined'
+ 'morale' 'widens' 'artificially' 'refined' 'widens' 'abroad' 'wires'
+ 'digest' 'digest' 'widens']
+
+Sentence 13:
+['devaluation' 'privately' 'privately' 'privately' 'privately' 'point'
+ 'point' 'point' 'point' 'point' 'point' 'point' 'point' 'n' 'year' 'year'
+ 'tightly' '<sos>' ' ' 'backer' 'quit' 'informed' 'solid' 'seeds'
+ 'squeezed' 'solid' 'seeds' 'restraint' 'steadily' 'seeds' 'shipped'
+ 'prescribed' 'rolling' 'shipped' 'prescribed' 'prescribed' 'prescribed'
+ 'capitalization' 'widens' 'abroad' 'prescribed' 'donoghue' 'receives'
+ 'banxquote' 'widens' 'abroad' 'abroad' 'donoghue' 'receives'
+ 'temperatures']
+
+Sentence 14:
+['her' 'law' 'diamond' 'temperatures' 'temperatures' 'temperatures'
+ 'virtue' 'laughing' 'matched' 'privately' 'matched' 'cent' 'forward'
+ 'cent' 'cent' 'forward' 'cent' 'cent' 'privately' 'cent' 'cent' 'cent'
+ 'offs' 'cent' 'cent' 'offs' 'cent' 'offs' 'cent' 'cent' 'cent' 'cent'
+ 'offs' 'cent' 'offs' 'cent' 'inch' 'cent' 'cent' 'minimills' 'offs'
+ 'tightly' 'tightly' '<sos>' ' ' 'citicorp' 'sponsor' 'backer' 'middlemen'
+ 'interviewed']
+
+Sentence 15:
+['topple' 'cabrera' ' ' 'surely' 'regret' 'temperatures' 'sleeping'
+ 'hands' 'abroad' 'abroad' 'preventing' 'anywhere' 'abroad' 'abroad'
+ 'abroad' 'dump' 'tuition' 'temperatures' 'temperatures' 'widens' 'mental'
+ 'unrest' 'temperatures' 'widens' 'satisfactory' 'refineries' 'widens'
+ 'preventing' 'exposure' 'widens' 'dependents' 'refineries' 'temperatures'
+ 'widens' 'artificially' 'format' 'widens' 'artificially' 'fluctuations'
+ 'abroad' 'abroad' 'abroad' 'widens' 'uncertainties' 'temperatures'
+ 'widens' 'artificially' 'vacancy' 'widens' 'dependents']
+
+Sentence 16:
+['orleans' 'clean' 'thursday' 'healthcare' 'stream' 'cleveland'
+ 'middlemen' 'incurred' 'extended' 'penalties' 'stream' 'usage' 'stream'
+ 'abroad' 'overseeing' 'improvements' 'restraint' 'abroad' 'abroad'
+ 'abroad' 'abroad' 'abroad' 'abroad' 'wires' 'abroad' 'artificially'
+ 'reinvest' 'temperatures' 'widens' 'abroad' 'abroad' 'abroad'
+ 'artificially' 'deductible' 'widens' 'satisfactory' 'refineries'
+ 'overseeing' 'midyear' 'erosion' 'refined' 'widens' 'abroad' 'wrap'
+ 'artificially' 'deductible' 'refineries' 'digest' 'widens' 'momentum']
+
+Sentence 17:
+['blocks' 'parties' 'worker' 'middlemen' 'temperatures' 'temperatures'
+ 'temperatures' 'temperatures' 'temperatures' 'temperatures' 'loath'
+ 'laughing' 'billing' 'images' 'parade' 'widens' 'satisfactory'
+ 'refineries' 'parade' 'sleeping' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'deficiency' 'bronfman']
+
+Sentence 18:
+['planned' 'eurodollars' 'grenfell' 'mae' '<sos>' ' ' 'allianz' 'exported'
+ 'sagged' 'wider' 'surprises' 'abroad' 'incomplete' 'middlemen' 'owed'
+ 'forward' 'knocking' 'abroad' 'vary' 'evenly' 'capitalization'
+ 'surprises' 'capitalization' 'surprises' 'prescribed' 'capitalization'
+ 'prescribed' 'equivalents' 'widens' 'abroad' 'donoghue' 'receives'
+ 'banxquote' 'widens' 'mental' 'amicable' 'amicable' 'unrest' 'prescribed'
+ 'respectively' 'parade' 'widens' 'satisfactory' 'unrest' 'temperatures'
+ 'respectively' 'dependents' 'widens' 'temperatures' 'abroad']
+
+Sentence 19:
+['depletion' 'vital' 'rarely' 'rarely' 'sacrifice' 'widens' 'widens'
+ 'artificially' 'exposure' 'widens' 'satisfactory' 'exposure' 'widens'
+ 'satisfactory' 'refineries' 'hurting' 'dependents' 'incurred'
+ 'artificially' 'scramble' 'whichever' 'refineries' 'artificially'
+ 'artificially' 'deductible' 'widens' 'satisfactory' 'refineries'
+ 'temperatures' 'artificially' 'format' 'heavier' 'widens' 'artificially'
+ 'refined' 'morale' 'widens' 'artificially' 'refined' 'wires' 'widens'
+ 'abroad' 'wires' 'digest' 'digest' 'digest' 'widens' 'plummet' 'widens'
+ 'whichever']
+
+Sentence 20:
+['26' 'refineries' 'doldrums' 'float' 'float' 'cent' 'cent' 'float' 'cent'
+ 'cent' 'forward' 'cent' 'cent' 'privately' 'cent' 'cent' 'up' 'cent'
+ 'float' 'cent' 'offs' 'cent' 'offs' 'cent' 'offs' 'cent' 'cent' 'cent'
+ 'offs' 'cent' 'inch' 'cent' 'offs' 'cent' 'offs' 'cent' 'offs' 'inch'
+ 'inch' 'cent' 'cent' 'offs' 'cent' 'offs' 'cent' 'offs' 'cent' 'offs'
+ 'cent' 'inch']
+
+Sentence 21:
+['longest' 'gallons' 'station' "'re" '<sos>' ' ' 'separately' 'backer'
+ 'middlemen' 'interviewed' 'solid' 'middlemen' 'respectable' 'pushed'
+ 'incomplete' 'seeds' 'abroad' 'abroad' 'finishing' 'incomplete'
+ 'penalties' 'knocking' 'abroad' 'vary' 'widens' 'mental' 'seeds'
+ 'stimulators' 'prescribed' 'temperatures' 'respectively' 'donoghue'
+ 'receives' 'excited' 'temperatures' 'owed' 'abroad' 'abroad' 'abroad'
+ 'donoghue' 'conspired' 'widens' 'abroad' 'donoghue' 'receives' 'abroad'
+ 'billing' 'widens' 'abroad' 'billing']
+
+Sentence 22:
+[' ' 'allianz' 'monopolies' 'ambrosiano' 'md' '.' 'md' 'overseeing'
+ 'bronfman' 'middlemen' 'policyholders' 'billing' 'middlemen' 'billing'
+ 'processors' 'stimulators' 'format' 'poorer' 'equivalents' 'equivalents'
+ 'widens' 'satisfactory' 'refineries' 'overseeing' 'artificially'
+ 'conditional' 'refineries' 'policyholders' 'abroad' 'wires' 'digest'
+ 'equivalents' 'widens' 'satisfactory' 'refineries' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest']
+
+Sentence 23:
+['towers' 'sassy' 'otherwise' 'temperatures' 'shed' 'temperatures'
+ 'prescribed' 'capitalization' 'prescribed' 'prescribed' 'prescribed'
+ 'equivalents' 'widens' 'severance' 'equivalents' 'widens' 'donoghue'
+ 'refineries' 'donoghue' 'widens' 'donoghue' 'refineries' 'donoghue'
+ 'conspired' 'incurred' 'conditional' 'digest' 'equivalents' 'widens'
+ 'artificially' 'digest' 'digest' 'widens' 'artificially' 'refined'
+ 'format' 'equivalents' 'widens' 'artificially' 'refined' 'equivalents'
+ 'widens' 'artificially' 'refined' 'equivalents' 'equivalents' 'widens'
+ 'artificially' 'refined' 'equivalents']
+
+Sentence 24:
+['grows' 'severance' 'restraint' 'surprises' 'shipped' 'knocking' 'abroad'
+ 'abroad' 'respectable' 'hands' 'abroad' 'abroad' 'abroad' 'formation'
+ 'widens' 'perceptions' 'mental' 'unrest' 'zone' 'widens' 'banxquote'
+ 'donoghue' 'conspired' 'suggesting' 'that' 'penalties' 'violated'
+ 'streamlining' 'temperatures' 'widens' 'artificially' 'exclusively'
+ 'usage' 'widens' 'abroad' 'abroad' 'donoghue' 'conspired' 'suggesting'
+ 'that' 'penalties' 'temperatures' 'widens' 'finishing' 'anywhere' 'owed'
+ 'below' 'abroad' 'lows' 'donoghue']
+
+Sentence 25:
+['mental' 'achievement' 'coach' 'coach' 'palm' 'palm' 'palm' 'palm' 'palm'
+ 'palm' 'palm' 'palm' 'palm' 'bronfman' 'palm' 'bronfman' 'digest'
+ 'overseeing' 'bronfman' 'palm' 'digest' 'images' 'palm' 'palm' 'bronfman'
+ 'palm' 'bronfman' 'palm' 'bronfman' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest']
+
+Sentence 26:
+['afghan' 'hung' 'midyear' 'gross' 'unk' 'unk' 'cent' 'basis' 'cent' '>'
+ 'cent' 'cent' 'cent' 'cent' 'cent' 'cent' 'cent' 'salvage' 'cent' 'cent'
+ 'cent' 'deductible' 'deductible' 'carries' 'carries' 'float' 'cent'
+ 'salvage' 'equivalents' 'cent' 'cent' 'cent' 'float' 'equivalents' 'cent'
+ 'equivalents' 'cent' 'cent' 'cent' 'float' 'cent' 'float' 'cent'
+ 'equivalents' 'cent' 'cent' 'equivalents' 'cent' 'primary' 'cent']
+
+Sentence 27:
+['temblor' 'bicycle' 'demonstrates' 'banning' '<unk>' '<unk>' '<unk>'
+ '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>'
+ '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>'
+ '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>'
+ '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>'
+ '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>' '<unk>']
+
+Sentence 28:
+['neuberger' 'act' 'carries' 'select' 'inch' 'deficits' 'temperatures'
+ 'owed' 'satisfactory' 'stream' 'wires' 'widens' 'satisfactory'
+ 'refineries' 'widens' 'satisfactory' 'refineries' 'overseeing'
+ 'artificially' 'computerized' 'refineries' 'digest' 'digest' 'refineries'
+ 'digest' 'refineries' 'outweigh' 'bronfman' 'refineries' 'billing'
+ 'widens' 'artificially' 'refined' 'morale' 'widens' 'artificially'
+ 'refined' 'format' 'equivalents' 'widens' 'plummet' 'widens'
+ 'satisfactory' 'refineries' 'temperatures' 'artificially' 'deductible'
+ 'widens' 'satisfactory' 'refineries']
+
+Sentence 29:
+['verdict' 'widens' 'satisfactory' 'hands' 'temperatures' 'temperatures'
+ 'exceeding' 'widens' 'whichever' 'equivalents' 'widens' 'satisfactory'
+ 'refineries' 'hurting' 'dependents' 'temperatures' 'temperatures'
+ 'artificially' 'offshore' 'widens' 'satisfactory' 'refineries'
+ 'prescribed' 'deficits' 'equivalents' 'widens' 'artificially' 'refined'
+ 'digest' 'widens' 'wires' 'reinvest' 'artificially' 'refined' 'morale'
+ 'widens' 'artificially' 'refined' 'vacancy' 'widens' 'artificially'
+ 'refined' 'format' 'equivalents' 'widens' 'satisfactory' 'refineries'
+ 'equivalents' 'widens' 'satisfactory']
+
+Sentence 30:
+['phase' 'pursued' 'pursued' ' ' 'meanwhile' 'meanwhile' 'then' 'i' 'quit'
+ 'successfully' 'cease' 'temperatures' 'sleeping' 'sleeping' 'sleeping'
+ 'stimulators' 'prescribed' 'heavier' 'sacrifice' 'surpluses' 'tie'
+ 'mental' 'refineries' 'prescribed' 'format' 'prescribed' 'sites' 'widens'
+ 'satisfactory' 'refineries' 'temperatures' 'owed' 'satisfactory'
+ 'refineries' 'digest' 'digest' 'format' 'incurred' 'artificially'
+ 'refined' 'morale' 'widens' 'satisfactory' 'refineries' 'widens'
+ 'satisfactory' 'refineries' 'temperatures' 'digest' 'digest']
+
+Sentence 31:
+['widening' 'cent' 'unk' 'unk' 'unk' 'unk' 'subsidize' 'willful' 'willful'
+ 'susan' 'meanwhile' 'living' 'sharper' 'salary' 'temperatures' 'laughing'
+ 'temperatures' 'exclusively' 'prescribed' 'refined' 'equivalents'
+ 'equivalents' 'widens' 'whichever' 'widens' 'mental' 'refineries'
+ 'prescribed' 'deficits' 'widens' 'satisfactory' 'refineries'
+ 'temperatures' 'widens' 'artificially' 'refined' 'fluctuations' 'widens'
+ 'artificially' 'refined' 'doldrums' 'digest' 'widens' 'satisfactory'
+ 'refineries' 'digest' 'digest' 'digest' 'digest' 'digest']
+
+Sentence 32:
+['carla' 'milestones' 'forest' 'mae' '<sos>' ' ' 'separately' 'brewing'
+ 's.c' 'misstated' 'extended' 'exclusively' 'totaling' 'exclusively'
+ 'totaling' 'middlemen' 'prescribed' 'severance' 'middlemen'
+ 'successfully' 'minus' 'conditional' 'exclusively' 'abroad' 'abroad'
+ 'severance' 'capitalization' 'widens' 'severance' 'fluctuations' 'abroad'
+ 'abroad' 'abroad' 'donoghue' 'conspired' 'conditional' 'format'
+ 'respectively' 'respectively' 'abroad' 'abroad' 'billing' 'widens'
+ 'abroad' 'billing' 'widens' 'artificially' 'heavier' 'fluctuations'
+ 'widens']
+
+Sentence 33:
+['wires' 'chancery' 'intensely' 'solved' 've' 'pont' 'fargo' 'mae' 've'
+ 'mae' 'm' 'kong' 'kong' 've' ' ' 'drexel' 'lyonnais' 'achievement'
+ 'compliance' 'middlemen' 'tailored' 'crest' 'sleeping' 'parade'
+ 'prescribed' 'anywhere' 'prescribed' 'temperatures' 'prescribed'
+ 'temperatures' 'prescribed' 'prescribed' 'prescribed' 'prescribed'
+ 'widens' 'preventing' 'tuition' 'equivalents' 'temperatures' 'widens'
+ 'abroad' 'abroad' 'donoghue' 'widens' 'donoghue' 'refineries' 'incurred'
+ 'temperatures' 'prescribed' 'equivalents']
+
+Sentence 34:
+['prebon' 'unk' '<sos>' ' ' 'separately' 'brewing' 'achievement' 'backer'
+ 'hart' 'stream' 'irving' 'mich' 'becomes' 'assurances' 'ranging' 'below'
+ 'improvements' 'ranging' 'exclusively' 'exclusively' 'owed' 'abroad'
+ 'abroad' 'abroad' 'screens' 'solid' 'middlemen' 'shipped' 'surprises'
+ 'abroad' 'improvements' 'abroad' 'abroad' 'abroad' 'uncertainties'
+ 'widens' 'banxquote' 'abroad' 'donoghue' 'receives' 'banxquote'
+ 'prescribed' 'donoghue' 'respectively' 'donoghue' 'conspired'
+ 'successfully' 'jittery' 'billing' 'deficiency']
+
+Sentence 35:
+['bacterium' "'re" 'commerciale' 'kong' '<sos>' ' ' 'separately'
+ 'prudential' 'monopolies' 'incurred' 'overtime' 'shipped' 'exclusively'
+ 'totaling' 'exceeding' 'deductible' 'severance' 'drove' 'abroad'
+ 'ranging' 'owed' 'penalties' 'owed' 'below' 'eroding' 'penalties' 'owed'
+ 'below' 'lows' 'abroad' 'abroad' 'abroad' 'donoghue' 'conspired'
+ 'suggesting' 'abroad' 'abroad' 'lows' 'donoghue' 'conspired' 'laughing'
+ 'abroad' 'conditional' 'exclusively' 'exclusively' 'exclusively'
+ 'equivalents' 'owed' 'solid' 'equivalents']
+
+Sentence 36:
+['convertible' 'convertible' "'re" '<sos>' ' ' 'separately' 'mobil'
+ 'brewing' 'owes' 'eliminating' 'exclusively' 'exclusively' 'exclusively'
+ 'formation' 'indicating' 'misleading' 'deficiency' 'penalties' 'shipped'
+ 'prescribed' 'improvements' 'owed' 'abroad' 'abroad' 'abroad' 'abroad'
+ 'screens' 'usage' 'surprises' 'capitalization' 'surprises'
+ 'capitalization' 'surprises' 'capitalization' 'surprises'
+ 'capitalization' 'equivalents' 'equivalents' 'equivalents' 'equivalents'
+ 'capitalization' 'surprises' 'capitalization' 'surprises' 'prescribed'
+ 'equivalents' 'widens' 'abroad' 'abroad' 'donoghue']
+
+Sentence 37:
+['laughing' 'unk' 'deputy' 'images' 'sleeping' 'murdered' 'sleeping'
+ 'palm' 'tennis' 'images' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm'
+ 'palm' 'bronfman' 'digest' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm'
+ 'palm' 'palm' 'bronfman' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'deficiency' 'bronfman' 'digest' 'digest' 'digest' 'digest'
+ 'digest']
+
+Sentence 38:
+['reaching' 'mercury' 'unk' 'unk' 'minute' 'minute' 'democracy' '>'
+ 'lufkin' '<sos>' ' ' 'separately' 'mobil' 'middlemen' 'middlemen'
+ 'extended' 'incomplete' 'middlemen' 'alleging' 'incomplete' 'messages'
+ 'liable' 'heavier' 'seeds' 'shipped' 'knocking' 'ranging' 'exclusively'
+ 'heavier' 'seeds' 'seeds' 'snapped' 'abroad' 'prescribed' 'anywhere'
+ 'abroad' 'abroad' 'suggesting' 'respectable' 'refineries' 'respectable'
+ 'seeds' 'stimulators' 'respectively' 'circulated' 'conditional'
+ 'exclusively' 'equivalents' 'widens' 'severance']
+
+Sentence 39:
+['notice' 'retains' 'retains' 'quit' 'jump' 'carries' 'shed' 'cent' 'cent'
+ 'cent' 'cent' 'float' 'cent' 'float' 'cent' 'mighty' 'salvage' 'cent'
+ 'float' 'cent' 'deductible' 'cent' 'float' 'cent' 'cent' 'cent' 'offs'
+ 'cent' 'cent' 'offs' 'cent' 'cent' 'cent' 'cent' 'float' 'cent' 'cent'
+ 'cent' 'forward' 'cent' 'offs' 'cent' 'offs' 'cent' 'offs' 'cent' 'offs'
+ 'cent' 'cent' 'offs']
+
+Sentence 40:
+['almost' 'photo' 'rout' 'incurred' 'overseeing' 'preventing'
+ 'deteriorating' 'middlemen' 'routinely' 'mighty' 'salvage' 'loath'
+ 'widens' 'dependents' 'refineries' 'temperatures' 'reinvest'
+ 'temperatures' 'widens' 'satisfactory' 'refineries' 'overseeing'
+ 'midyear' 'temperatures' 'widens' 'dependents' 'refineries'
+ 'artificially' 'bronfman' 'digest' 'widens' 'artificially' 'format'
+ 'incurred' 'artificially' 'refined' 'refined' 'widens' 'artificially'
+ 'format' 'format' 'equivalents' 'widens' 'satisfactory' 'refined'
+ 'equivalents' 'widens' 'satisfactory' 'refineries' 'noting']
+
+Sentence 41:
+['scramble' 'pool' 'managing' 'shipping' 'images' 'temperatures' 'owed'
+ 'artificially' 'deductible' 'widens' 'whichever' 'refineries'
+ 'temperatures' 'sites' 'owed' 'artificially' 'refined' 'surpluses'
+ 'speeds' 'widens' 'artificially' 'refined' 'morale' 'widens'
+ 'artificially' 'refined' 'morale' 'widens' 'artificially' 'refined'
+ 'doldrums' 'equivalents' 'widens' 'satisfactory' 'refineries'
+ 'overseeing' 'bronfman' 'refineries' 'hurting' 'bronfman' 'refineries'
+ 'artificially' 'vacancy' 'widens' 'artificially' 'refined' 'morale'
+ 'widens' 'artificially' 'format']
+
+Sentence 42:
+['harry' 'phones' 'regret' 'relevant' 'fingers' 'flag' 'sleeping'
+ 'fingers' 'sleeping' 'fingers' 'parade' 'palm' 'palm' 'palm' 'palm'
+ 'palm' 'palm' 'palm' 'palm' 'palm' 'bronfman' 'palm' 'palm' 'palm' 'palm'
+ 'bronfman' 'palm' 'bronfman' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'bronfman' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'bronfman'
+ 'digest']
+
+Sentence 43:
+['illustrate' 'arrow' 'season' 'inc' '<sos>' ' ' 'allianz' 'exported'
+ 'sagged' 'wider' 'surprises' 'overseeing' 'improvements' 'restraint'
+ 'abroad' 'abroad' 'formation' 'abroad' 'abroad' 'abroad' 'widens'
+ 'satisfactory' 'unrest' 'temperatures' 'abroad' 'abroad' 'dependents'
+ 'adopt' 'temperatures' 'owed' 'temperatures' 'respectively' 'dependents'
+ 'widens' 'artificially' 'heavier' 'fluctuations' 'abroad' 'donoghue'
+ 'refineries' 'hurting' 'dependents' 'incurred' 'artificially'
+ 'exclusively' 'refined' 'equivalents' 'equivalents' 'widens' 'severance']
+
+Sentence 44:
+['contributed' 'receives' 'incomplete' 'surprises' 'overseeing'
+ 'streamlining' 'integrity' 'wound' 'abroad' 'abroad' 'finishing' 'upward'
+ 'owed' 'abroad' 'abroad' 'abroad' 'artificially' 'capitalization'
+ 'fluctuations' 'abroad' 'abroad' 'abroad' 'abroad' 'abroad'
+ 'uncertainties' 'widens' 'dependents' 'dependents' 'reinvest'
+ 'temperatures' 'widens' 'abroad' 'abroad' 'donoghue' 'conspired' 'widens'
+ 'satisfactory' 'refineries' 'donoghue' 'conspired' 'incurred'
+ 'artificially' 'deductible' 'refined' 'capitalization' 'widens' 'omitted'
+ 'abroad' 'stemming' 'widens']
+
+Sentence 45:
+['justifies' 'improvements' 'inched' 'solid' 'equivalents' 'equivalents'
+ 'equivalents' 'float' 'equivalents' 'float' 'respectively' 'prompting'
+ 'lipper' 'minus' 'conditional' 'equivalents' 'refineries' 'omitted'
+ 'coupons' 'usage' 'equivalents' 'equivalents' 'equivalents' 'owed'
+ 'prompting' 'bronfman' 'refineries' 'artificially' 'bronfman' 'digest'
+ 'digest' 'equivalents' 'refineries' 'equivalents' 'equivalents'
+ 'equivalents' 'equivalents' 'equivalents' 'owed' 'artificially'
+ 'artificially' 'deductible' 'refineries' 'artificially' 'rebounding'
+ 'speeds' 'widens' 'artificially' 'rebounding' 'widens']
+
+Sentence 46:
+['wednesday' 'fannie' 'intermediate' 'sagged' 'sagged' 'sagged'
+ 'reoffered' 'laughing' 'surprises' 'issuers' 'widens' 'abroad' 'abroad'
+ 'abroad' 'donoghue' 'conspired' 'widens' 'abroad' 'donoghue' 'conspired'
+ 'receives' 'donoghue' 'conspired' 'prescribed' 'donoghue' 'conspired'
+ 'digest' 'exclusively' 'equivalents' 'equivalents' 'equivalents' 'owed'
+ 'below' 'severance' 'refunds' 'widens' 'severance' 'fluctuations'
+ 'abroad' 'abroad' 'donoghue' 'conspired' 'incurred' 'conditional'
+ 'exclusively' 'incurred' 'artificially' 'deductible' 'vacancy' 'widens']
+
+Sentence 47:
+[' ' 'nobel' 'singer' 'splitting' 'overseeing' 'peru' 'fingers' 'fingers'
+ 'mental' 'unrest' 'temperatures' 'prescribed' 'temperatures' 'prescribed'
+ 'temperatures' 'prescribed' 'prescribed' 'prescribed' 'equivalents'
+ 'widens' 'severance' 'equivalents' 'widens' 'donoghue' 'refineries'
+ 'donoghue' 'conspired' 'prescribed' 'donoghue' 'refineries' 'donoghue'
+ 'digest' 'digest' 'equivalents' 'equivalents' 'equivalents' 'equivalents'
+ 'owed' 'whichever' 'refineries' 'artificially' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest']
+
+Sentence 48:
+['>' 'half' 'wednesday' 'amounted' 'indicating' 'cent' 'float' 'cent'
+ 'cent' 'gallons' 'inch' 'reimburse' '<sos>' ' ' 'separately' 'mobil'
+ 'tapped' 'extended' 'discounting' 'penalties' 'incurred' 'finishing'
+ 'heavier' 'stream' 'abroad' 'formation' 'abroad' 'formation' 'abroad'
+ 'financed' 'abroad' 'abroad' 'abroad' 'abroad' 'abroad' 'label' 'abroad'
+ 'abroad' 'abroad' 'widens' 'mental' 'unrest' 'temperatures' 'owed'
+ 'dependents' 'reinvest' 'abroad' 'abroad' 'abroad' 'donoghue']
+
+Sentence 49:
+['exposures' 'carrying' 'hospitals' 'temperatures' 'widens' 'abroad'
+ 'lows' 'abroad' 'perceptions' 'accompanying' 'illustration'
+ 'temperatures' 'widens' 'abroad' 'perceptions' 'preventing' 'exposure'
+ 'temperatures' 'widens' 'donoghue' 'receives' 'temperatures' 'loath'
+ 'crest' 'widens' 'mental' 'refineries' 'prescribed' 'revolving' '<unk>'
+ '<unk>' '<unk>' 'bronfman' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest']
+
+Sentence 50:
+['youngsters' 'efficiently' 'programmers' '<sos>' ' ' 'allianz'
+ 'pipelines' 'incurred' 'extended' 'exceeding' 'f-14' 'shipped' 'totaling'
+ 'provisional' 'surprises' 'deductible' 'steadily' 'exclusively' 'heavier'
+ 'deductible' 'exceeding' 'below' 'improvements' 'upward' 'owed' 'abroad'
+ 'abroad' 'abroad' 'suggesting' 'preventing' 'penalties' 'abroad' 'abroad'
+ 'artificially' 'eagerness' 'widens' 'satisfactory' 'refineries' 'abroad'
+ 'donoghue' 'conspired' 'incurred' 'artificially' 'exclusively' 'incurred'
+ 'refined' 'equivalents' 'owed' 'steadily' 'owed']
