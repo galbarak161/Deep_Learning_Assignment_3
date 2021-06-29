@@ -114,10 +114,8 @@ class LSTM_Predictor(nn.Module):
         plt.plot(accuracies_train, label='Train accuracy')
         plt.plot(accuracies_val, label='Validation accuracy')
         plt.plot(epochs - 1, accuracy_test, marker='o', markersize=3, color='red', label='Final Test accuracy')
-        plt.axvline(best_epoch, linestyle='--', color='r',
-                    label='Early Stopping Checkpoint')  # plot the line indicating the early-stop point
+        plt.axvline(best_epoch, linestyle='--', color='r', label='Early Stopping Checkpoint')
         plt.title(plot_title)
-        plt.grid(True)
         plt.plot()
         plt.legend()
         fig.savefig(plot_title)
@@ -128,11 +126,9 @@ class LSTM_Predictor(nn.Module):
         fig = plt.figure()
         plot_title = "Model losses"
         plt.plot(losses_train, label='Train loss')
-        plt.plot(losses_val, label='Val loss')
-        plt.axvline(best_epoch, linestyle='--', color='r',
-                    label='Early Stopping Checkpoint')  # plot the line indicating the early-stop point
+        plt.plot(losses_val, label='Validation loss')
+        plt.axvline(best_epoch, linestyle='--', color='r', label='Early Stopping Checkpoint')
         plt.title(plot_title)
-        plt.grid(True)
         plt.plot()
         plt.legend()
         fig.savefig(plot_title)

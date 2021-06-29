@@ -30,7 +30,7 @@ def generate_words(empty_model, vocab, batch_size, max_generated_sequence=50):
 
     tokenized_gen_words = np.array(tokenized_gen_words)
     tokenized_gen_words = np.transpose(tokenized_gen_words)
-    with open('generated_sequences.txt', 'w', encoding="utf8") as f:
+    with open('Generated Sequences.txt', 'w', encoding="utf8") as f:
         for i in range(max_generated_sequence):
             f.write(f'\nSentence {i + 1}:\n{np.array2string(tokenized_gen_words[i])}\n')
 

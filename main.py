@@ -12,13 +12,13 @@ def main():
     vocab_length = len(field.vocab)
     pad_tokens = field.vocab.stoi['<pad>']
 
-    epochs = 30
+    epochs = 50
     model = LSTM_Predictor(
         vocab_length, embedding_dim=128, num_layers=2, h_dim=256, ignore_index=pad_tokens
     ).to(DEVICE)
     print(model)
 
-    print(f'Train model with {epochs}...')
+    print(f'Train model using {epochs} epochs...')
     model.train_model(epochs, dl_train, dl_valid, dl_test)
 
     print('Generate words...')
