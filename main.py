@@ -1,7 +1,7 @@
 import time
 from pennTreebank_dataset import load_datasets
 from predictor_module import LSTM_Predictor, DEVICE
-from words_generator import generates_word_based_on_previous
+from words_generator import generate_words
 
 
 def print_time(time_taken: float) -> None:
@@ -41,11 +41,12 @@ def main():
     print_time(end_time - start_time)
 
     start_time = time.time()
-    print('generate words based on previous one...')
+    print('generate words...')
     empty_model = LSTM_Predictor(
         vocab_length, embedding_dim=128, num_layers=2, h_dim=256, ignore_index=pad_tokens
     ).to(DEVICE)
-    generates_word_based_on_previous(empty_model, field.vocab, batch_size)
+
+    generate_words(empty_model, batch_size, field.vocab, dl_test)
     end_time = time.time()
     print_time(end_time - start_time)
 

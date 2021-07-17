@@ -1,7 +1,8 @@
 from os import path
 import spacy
 import pandas as pd
-from torchtext.legacy.data import Field, BucketIterator, TabularDataset
+from torchtext.legacy.data import Field, TabularDataset, BucketIterator
+
 from predictor_module import DEVICE
 
 
@@ -57,6 +58,8 @@ def load_datasets(batch_size: int):
         batch_size=batch_size,
         sort=False,
         shuffle=True,
+        sort_within_batch=True,
+        sort_key=lambda x: len(x.d),
         device=DEVICE
     )
 

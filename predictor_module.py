@@ -23,6 +23,7 @@ class LSTM_Predictor(nn.Module):
         # Output layer
         self.out_fc = nn.Linear(h_dim, vocab_size)
         self.log_softmax = nn.LogSoftmax(dim=2)
+        self.relu = nn.ReLU()
 
         self.optimizer = torch.optim.Adam(self.parameters(), betas=(0.9, 0.999), eps=1e-08)
         self.loss_func = nn.CrossEntropyLoss(ignore_index=ignore_index)
@@ -33,8 +34,8 @@ class LSTM_Predictor(nn.Module):
         return sum(p.numel() for p in self.parameters() if p.requires_grad)
 
     def forward(self, x, forward_mode="train", initial_vec_h0=None, initial_vec_c0=None):
-        # this will be used upon training/generating by input
-        if forward_mode == "train" or forward_mode == "gen_by_input":
+        # this will be used upon training
+        if forward_mode == "train":
             # Embed the input:
             embedded = self.embedding(x)
 
@@ -46,7 +47,7 @@ class LSTM_Predictor(nn.Module):
             return self.out_fc(output)
 
         # used upon generation by teacher_forcing
-        if forward_mode == "teacher_force":
+        if forward_mode == "generates_by_previous":
             embedded, y_t, h_t, c_t = None, None, None, None
             generated_sentence = []
             max_words_generated = 50
@@ -62,9 +63,22 @@ class LSTM_Predictor(nn.Module):
 
                 y_t = self.out_fc(y_t)
                 y_t = torch.argmax(y_t, dim=2)
+
                 generated_sentence += y_t.tolist()
 
             return generated_sentence
+
+        # used upon beam_search and generating_by_Ground_Truth
+        if forward_mode == "beam_search" or forward_mode == "generating_by_Ground_Truth":
+            # Embed the input:
+            embedded = self.embedding(x)
+
+            # Run through the LSTMs with initial vecotrs
+            output, (h_t, c_t) = self.lstm(embedded, (initial_vec_h0, initial_vec_c0))
+
+            # Project H back to the vocab size V, to get a score per word
+            output = nn.functional.relu(output)
+            return self.out_fc(output)
 
     def train_model(self, epochs: int, train_data_loader, valid_data_loader, test_data_loader):
         losses_train = []
@@ -144,8 +158,8 @@ class LSTM_Predictor(nn.Module):
 
     def train_model_step(self, train_data_loader, grad_clip=1.):
         losses = []
-        self.train()
 
+        self.train()
         for idx_batch, batch in enumerate(train_data_loader, start=1):
             x, x_len = batch.d
 

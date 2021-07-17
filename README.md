@@ -25,7 +25,7 @@ number of parameters = 4,656,485
 ```
 Train: Accuracy = 37.65%, Avg Loss = 3.63
 Validation: Accuracy = 34.41%, Avg Loss = 4.26
-Test: Accuracy = 35.57%, Avg Loss = 4.19
+Test: Accuracy = 35.05%, Avg Loss = 4.19
 
 	Time taken: 00:09:20.33
 ```
