@@ -1,0 +1,683 @@
+
+#####################################
+Generates words based on previous one:
+######################################
+
+sentence 1:
+['kong' '<sos>' ' ' 'separately' 'mobil' 's' 'brewing' 'middlemen'
+ 'formed' 'extended' 'images' 'ranging' 'owed' 'misleading' 'seeds'
+ 'shipped' 'financed' 'directly' 'ranging' 'owed' 'severance' 'middlemen'
+ 'owed' 'below' 'improvements' 'conditional' 'laundering' 'owed' 'below'
+ 'improvements' 'conditional' 'surprises' 'capitalization' 'surprises'
+ 'overseeing' 'artificially' 'conditional' 'fluctuations' 'abroad'
+ 'abroad' 'abroad' 'artificially' 'deductible' 'refineries'
+ 'policyholders' 'abroad' 'abroad' 'abroad' 'artificially' 'widens']
+
+sentence 2:
+['pro' ' ' 'achievement' 'agricultural' 'middlemen' 'banning' 'tourism'
+ 'temperatures' 'prescribed' 'prescribed' 'prescribed' 'prescribed'
+ 'widens' 'satisfactory' 'refineries' 'prescribed' 'refined' 'equivalents'
+ 'widens' 'whichever' 'widens' 'mental' 'refineries' 'whichever'
+ 'refineries' 'whichever' 'refineries' 'artificially' 'refined' 'morale'
+ 'widens' 'artificially' 'refined' 'morale' 'widens' 'artificially'
+ 'refined' 'morale' 'widens' 'artificially' 'refined' 'morale' 'widens'
+ 'artificially' 'refined' 'morale' 'widens' 'artificially' 'refined'
+ 'morale']
+
+sentence 3:
+['<sos>' ' ' 'allianz' 'exported' 'sagged' 'wider' 'surprises' 'shipped'
+ 'knocking' 'abroad' 'abroad' 'abroad' 'formation' 'abroad' 'concludes'
+ 'abroad' 'formation' 'zone' 'splitting' 'billing' 'widens' 'abroad'
+ 'abroad' 'abroad' 'perceptions' 'preventing' 'mental' 'unrest'
+ 'temperatures' 'widens' 'mental' 'refineries' 'prescribed' 'revolving'
+ 'frequency' 'respectively' 'dependents' 'adopt' 'dependents'
+ 'stimulators' 'widens' 'artificially' 'exclusively' 'incurred'
+ 'artificially' 'deductible' 'widens' 'mental' 'refineries' 'temperatures']
+
+sentence 4:
+['endanger' 'pricings' '<sos>' ' ' 'separately' 'mobil' 's' 'backer'
+ 'middlemen' 'extended' 'overtime' 'exclusively' 'ranging' 'exclusively'
+ 'totaling' 'duty' 'stream' 'ranging' 'owed' 'severance' 'seeds' 'shipped'
+ 'knocking' 'abroad' 'abroad' 'abroad' 'formation' 'abroad' 'formation'
+ 'abroad' 'abroad' 'abroad' 'abroad' 'abroad' 'abroad' 'abroad' 'abroad'
+ 'abroad' 'abroad' 'abroad' 'abroad' 'knocking' 'perceptions' 'abroad'
+ 'cease' 'widens' 'artificially' 'fluctuations' 'abroad' 'abroad']
+
+sentence 5:
+['salvage' 'squeezed' 'temperatures' 'deductible' 'deductible' 'whichever'
+ 'middlemen' 'deployed' 'successfully' 'laughing' 'whichever' 'refineries'
+ 'artificially' 'exclusively' 'refined' 'equivalents' 'widens'
+ 'satisfactory' 'refineries' 'omitted' 'donoghue' 'refineries' 'noting'
+ 'satisfactory' 'refineries' 'owed' 'artificially' 'refined' 'digest'
+ 'widens' 'artificially' 'refined' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest']
+
+sentence 6:
+['300' 'perjury' 'lufkin' '<sos>' ' ' 'separately' 'mobil' 'brewing'
+ 'middlemen' 'interviewed' 'solid' 'middlemen' 'shipped' 'knocking'
+ 'abroad' 'abroad' 'abroad' 'formation' 'bumiputra' 'receives' 'formation'
+ 'seeds' 'shipped' 'financed' 'directly' 'ranging' 'owed' 'solid' 'seeds'
+ 'capitalization' 'surprises' 'seeds' 'capitalization' 'equivalents'
+ 'equivalents' 'equivalents' 'owed' 'evenly' 'owed' 'evenly'
+ 'capitalization' 'surprises' 'capitalization' 'surprises'
+ 'capitalization' 'surprises' 'capitalization' 'surprises' 'prescribed'
+ 'equivalents']
+
+sentence 7:
+['time' 'cbs' 'cbs' 'cbs' 'middlemen' 'banning' 'duty' 'select' 'sleeping'
+ 'stimulators' 'sleeping' 'parade' 'sleeping' 'sleeping' 'parade'
+ 'sleeping' 'parade' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm'
+ 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm'
+ 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm'
+ 'palm' 'palm' 'palm' 'palm' 'palm' 'palm']
+
+sentence 8:
+['eroded' 'furniture' 'crest' 'prescribed' 'equivalents' 'tag' 'float'
+ 'donoghue' 'respectively' 'donoghue' 'respectively' 'screens'
+ 'equivalents' 'widens' 'severance' 'screens' 'widens' 'donoghue'
+ 'respectively' 'donoghue' 'conspired' 'prescribed' 'conditional'
+ 'deficiency' 'respectively' 'respectively' 'conditional' 'widens'
+ 'conditional' 'refineries' 'prescribed' 'capitalization' 'widens'
+ 'abroad' 'donoghue' 'conspired' 'widens' 'satisfactory' 'refineries'
+ 'prescribed' 'donoghue' 'refineries' 'respectively' 'abroad' 'abroad'
+ 'donoghue' 'conspired' 'incurred' 'artificially' 'deductible']
+
+sentence 9:
+['morale' 'hung' 'refined' 'equivalents' 'equivalents' 'equivalents'
+ 'float' 'widens' 'donoghue' 'donoghue' 'respectively' 'respectively'
+ 'noting' 'riding' 'extended' 'temperatures' 'usage' 'widens'
+ 'artificially' 'refined' 'surpluses' 'tie' 'artificially' 'computerized'
+ 'refineries' 'digest' 'widens' 'artificially' 'refined' 'format'
+ 'equivalents' 'widens' 'artificially' 'refined' 'fluctuations' 'omitted'
+ 'bronfman' 'refineries' 'noting' 'satisfactory' 'refineries' 'owed'
+ 'artificially' 'refined' 'morale' 'widens' 'artificially' 'refined'
+ 'format' 'equivalents']
+
+sentence 10:
+['irrelevant' 'milestones' 'aeronautics' '<sos>' ' ' 'separately' 'mobil'
+ 's' 'backer' 'middlemen' 'splitting' 'middlemen' 'successfully'
+ 'respected' 'formation' 'ranging' 'ranging' 'refunds' 'owed' 'locations'
+ 'owed' 'below' 'improvements' 'ranging' 'owed' 'abroad' 'abroad' 'abroad'
+ 'formation' 'incurred' 'finishing' 'heavier' 'stream' 'abroad' 'abroad'
+ 'abroad' 'formation' 'owed' 'artificially' 'exclusively' 'usage'
+ 'incurred' 'artificially' 'deductible' 'stream' 'abroad' 'abroad'
+ 'artificially' 'deductible' 'refineries']
+
+sentence 11:
+['uptick' ' ' 'fujitsu' 'died' 'temperatures' 'shed' 'steadily'
+ 'deductible' 'hands' 'donoghue' 'receives' 'abroad' 'prescribed'
+ 'anywhere' 'prescribed' 'hands' 'donoghue' 'conspired' 'prescribed'
+ 'donoghue' 'conspired' 'owed' 'severance' 'exclusively' 'usage'
+ 'equivalents' 'capitalization' 'equivalents' 'owed' 'abroad' 'abroad'
+ 'abroad' 'abroad' 'artificially' 'exclusively' 'usage' 'widens' 'abroad'
+ 'abroad' 'abroad' 'donoghue' 'conspired' 'widens' 'artificially'
+ 'exclusively' 'incurred' 'artificially' 'deductible' 'stream' 'donoghue']
+
+sentence 12:
+['indexation' 'format' 'widens' 'donoghue' 'donoghue' 'widens'
+ 'temperatures' 'widens' 'whichever' 'donoghue' 'refineries' 'hurting'
+ 'dependents' 'reinvest' 'temperatures' 'widens' 'artificially' 'refined'
+ 'widens' 'dependents' 'refineries' 'audio' 'bronfman' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest']
+
+sentence 13:
+['whatever' 'impeachment' 'tied' 'damages' 'ranging' 'deteriorating'
+ 'middlemen' 'overseeing' 'preventing' 'rain' 'sleeping' 'criminals'
+ 'sleeping' 'sleeping' 'stimulators' 'blocked' 'fetal' 'depletion'
+ 'widens' 'mental' 'refineries' 'temperatures' 'prescribed' 'temperatures'
+ 'widens' 'satisfactory' 'refineries' 'prescribed' 'refined' 'widens'
+ 'mental' 'refineries' 'prescribed' 'temperatures' 'widens' 'satisfactory'
+ 'refineries' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest']
+
+sentence 14:
+['outflows' 'steelworkers' 'zoete' '<sos>' ' ' 'separately' 'mobil'
+ 'emerged' 'incurred' 'overtime' 'stabilized' 'race' 'hands' 'narrowed'
+ 'severance' 'surprises' 'shipped' 'knocking' 'abroad' 'abroad' 'abroad'
+ 'formation' 'abroad' 'abroad' 'abroad' 'formation' 'abroad' 'abroad'
+ 'abroad' 'abroad' 'abroad' 'abroad' 'perceptions' 'race' 'below'
+ 'improvements' 'restraint' 'abroad' 'abroad' 'abroad' 'abroad' 'abroad'
+ 'abroad' 'abroad' 'abroad' 'abroad' 'abroad' 'dependents' 'bowl' 'abroad']
+
+sentence 15:
+['irony' 'violations' 'routinely' 'routinely' 'minus' 'salvage'
+ 'stockholders' 'minus' 'nato' 'refineries' 'widens' 'widens' 'nashua'
+ 'bronfman' 'refineries' 'nashua' 'refineries' 'equivalents' 'equivalents'
+ 'equivalents' 'respectively' 'coupons' 'whichever' 'refineries'
+ 'whichever' 'refineries' 'whichever' 'refineries' 'artificially'
+ 'equivalents' 'whichever' 'equivalents' 'whichever' 'widens' 'whichever'
+ 'widens' 'whichever' 'refineries' 'artificially' 'refined' 'fluctuations'
+ 'widens' 'satisfactory' 'refineries' 'overseeing' 'artificially'
+ 'conditional' 'refineries' 'policyholders' 'abroad']
+
+sentence 16:
+['checking' 'seagram' 'middlemen' 'routinely' 'satisfied' 'chores'
+ 'exclusively' 'owed' 'speeds' 'widens' 'artificially' 'exclusively'
+ 'incurred' 'artificially' 'deductible' 'widens' 'satisfactory'
+ 'refineries' 'temperatures' 'respectively' 'preventing' 'refined' 'wires'
+ 'widens' 'artificially' 'refined' 'format' 'widens' 'artificially'
+ 'refined' 'morale' 'widens' 'artificially' 'refined' 'morale' 'widens'
+ 'artificially' 'refined' 'morale' 'widens' 'artificially' 'refined'
+ 'morale' 'widens' 'artificially' 'refined' 'morale' 'widens'
+ 'artificially' 'refined']
+
+sentence 17:
+['steady' 'raising' 'gains' 'quit' 'collected' 'collected' 'widens'
+ 'omitted' 'float' 'float' 'donoghue' 'respectively' 'nashua' 'exceeds'
+ 'nashua' 'usage' 'widens' 'artificially' 'refined' 'equivalents'
+ 'equivalents' 'widens' 'satisfactory' 'refineries' 'overseeing'
+ 'bronfman' 'refineries' 'artificially' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest']
+
+sentence 18:
+['statewide' 'willful' '<sos>' ' ' 'separately' 'mobil' 's' 'backer'
+ 'middlemen' 'splitting' 'middlemen' 'successfully' 'respected' 'fetal'
+ 'middlemen' 'suggesting' 'that' 'penalties' 'violated' 'streamlining'
+ 'penalties' 'owed' 'finishing' 'heavier' 'stream' 'abroad' 'abroad'
+ 'abroad' 'lows' 'abroad' 'abroad' 'donoghue' 'conspired' 'laughing'
+ 'artificially' 'exclusively' 'exclusively' 'equivalents' 'equivalents'
+ 'owed' 'severance' 'widens' 'abroad' 'donoghue' 'conspired' 'widens'
+ 'satisfactory' 'refineries' 'prescribed' 'bronfman']
+
+sentence 19:
+['clara' 've' 'grenfell' '<sos>' ' ' 'separately' 'carnival' 'emerged'
+ 'incurred' 'overtime' 'exclusively' 'formation' 'incurred' 'challenging'
+ 'hands' 'exclusively' 'totaling' 'minus' 'lows' 'owed' 'misleading'
+ 'hands' 'narrowed' 'solid' 'middlemen' 'owed' 'solid' 'capitalization'
+ 'equivalents' 'equivalents' 'owed' 'severance' 'capitalization'
+ 'surprises' 'capitalization' 'surprises' 'prescribed' 'equivalents'
+ 'widens' 'severance' 'fluctuations' 'prompting' 'abroad' 'riding'
+ 'conditional' 'fluctuations' 'abroad' 'donoghue' 'conspired' 'widens']
+
+sentence 20:
+['agrees' ' ' 'cbs' 'died' 'collected' 'tenfold' 'ranging' 'exclusively'
+ 'heavier' 'middlemen' 'overseeing' 'peru' 'aborted' 'stimulators'
+ 'laughing' 'temperatures' 'prescribed' 'temperatures' 'respectively'
+ 'towers' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest']
+
+sentence 21:
+['oversee' 'crane' 'contractor' 'shed' 'shed' 'gin' 'laughing' 'exposures'
+ 'stockholders' 'respectively' 'whichever' 'refineries' 'whichever'
+ 'refineries' 'whichever' 'refineries' 'whichever' 'refineries'
+ 'artificially' 'refined' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest']
+
+sentence 22:
+['drawings' 'unk' '<sos>' ' ' 'separately' 'mobil' 's' 'backer'
+ 'middlemen' 'extended' 'furniture' 'seeds' 'emerged' 'anywhere'
+ 'exclusively' 'ranging' 'exclusively' 'totaling' 'duty' 'stream'
+ 'ranging' 'owed' 'severance' 'seeds' 'shipped' 'knocking' 'owed' 'below'
+ 'improvements' 'ranging' 'owed' 'abroad' 'abroad' 'abroad' 'screens'
+ 'equivalents' 'equivalents' 'owed' 'below' 'improvements' 'usage'
+ 'laundering' 'owed' 'below' 'improvements' 'usage' 'surprises'
+ 'capitalization' 'surprises' 'prescribed']
+
+sentence 23:
+['rica' 'committee' 'switzerland' 'unrelated' 'widening' 'dodge' 'inched'
+ 'equivalents' 'equivalents' 'equivalents' 'equivalents' 'equivalents'
+ 'equivalents' 'float' 'respectively' 'whichever' 'equivalents'
+ 'equivalents' 'whichever' 'widens' 'whichever' 'usage' 'knocking'
+ 'artificially' 'exclusively' 'usage' 'laughing' 'artificially'
+ 'artificially' 'exclusively' 'usage' 'laughing' 'artificially'
+ 'artificially' 'exclusively' 'wires' 'owed' 'artificially' 'refined'
+ 'fluctuations' 'owed' 'artificially' 'refined' 'digest' 'surpluses'
+ 'artificially' 'digest' 'digest' 'digest' 'digest']
+
+sentence 24:
+['prescribed' 'overseeing' 'tight' 'milk' 'sheets' 'temperatures' 'float'
+ 'widens' 'widens' 'float' 'float' 'float' 'float' 'float' 'float' 'float'
+ 'mighty' 'deficits' 'equivalents' 'equivalents' 'equivalents' 'float'
+ 'widens' 'float' 'donoghue' 'respectively' 'nashua' 'exceeds' 'nashua'
+ 'usage' 'incurred' 'artificially' 'deductible' 'refineries'
+ 'artificially' 'deductible' 'refineries' 'policyholders' 'upward'
+ 'widens' 'artificially' 'refined' 'fluctuations' 'digest' 'refineries'
+ 'policyholders' 'artificially' 'laughing' 'refined' 'minimills']
+
+sentence 25:
+['turnaround' '$' 'n' 'gin' 'carries' 'overseeing' 'stockholders'
+ 'deductible' 'doldrums' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest' 'digest'
+ 'digest' 'digest' 'digest' 'digest']
+
+sentence 26:
+['swift' 'bicycle' 'middlemen' 'performed' 'riding' 'discouraging'
+ 'morale' 'laughing' 'abroad' 'redemptions' 'upward' 'redemptions'
+ 'poorer' 'images' 'whichever' 'widens' 'whichever' 'widens' 'dependents'
+ 'rain' 'reinvest' 'temperatures' 'widens' 'abroad' 'abroad' 'widens'
+ 'satisfactory' 'refineries' 'temperatures' 'widens' 'artificially'
+ 'refined' 'fluctuations' 'widens' 'abroad' 'abroad' 'widens'
+ 'satisfactory' 'refineries' 'temperatures' 'widens' 'artificially'
+ 'refined' 'fluctuations' 'widens' 'artificially' 'bronfman' 'refineries'
+ 'artificially' 'refined']
+
+sentence 27:
+['widens' ' ' 'allianz' 'middlemen' 'illustrate' 'streamlining'
+ 'uncertainties' 'opted' 'artificially' 'satisfied' 'liable' 'bets'
+ 'knocking' 'abroad' 'artificially' 'eagerness' 'widens' 'satisfactory'
+ 'refineries' 'temperatures' 'widens' 'satisfactory' 'refineries'
+ 'temperatures' 'artificially' 'exclusively' 'incurred' 'refined' 'widens'
+ 'satisfactory' 'refineries' 'artificially' 'refined' 'format' 'widens'
+ 'artificially' 'refined' 'morale' 'widens' 'artificially' 'refined'
+ 'morale' 'widens' 'artificially' 'refined' 'morale' 'widens'
+ 'artificially' 'refined' 'morale']
+
+sentence 28:
+['border' 'contained' 'temperatures' 'temperatures' 'prescribed' 'refined'
+ 'redemptions' 'refined' 'equivalents' 'equivalents' 'widens'
+ 'satisfactory' 'refineries' 'equivalents' 'widens' 'satisfactory'
+ 'refineries' 'omitted' 'jacob' 'bronfman' 'refineries' 'noting'
+ 'preventing' 'bronfman' 'refineries' 'policyholders' 'artificially'
+ 'vacancy' 'laundering' 'vacancy' 'widens' 'artificially' 'refined'
+ 'format' 'equivalents' 'widens' 'artificially' 'refined' 'fluctuations'
+ 'digest' 'widens' 'artificially' 'refined' 'format' 'equivalents'
+ 'widens' 'artificially' 'refined' 'fluctuations' 'digest']
+
+sentence 29:
+['republican' ' ' 'south' 'middlemen' 'fails' 'routinely' 'satisfied'
+ 'anytime' 'benign' 'sleeping' 'sleeping' 'sleeping' 'sleeping' 'sleeping'
+ 'sleeping' 'sleeping' 'stimulators' 'sleeping' 'parade' 'sleeping'
+ 'sleeping' 'parade' 'sleeping' 'sleeping' 'stimulators' 'palm' 'palm'
+ 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm'
+ 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm' 'palm'
+ 'palm' 'palm' 'palm']
+
+sentence 30:
+['diversion' 'exported' 'crest' 'laughing' 'whichever' 'middlemen'
+ 'suggesting' 'entering' 'damaged' 'rain' 'temperatures' 'prescribed'
+ 'heavier' 'stimulators' 'widens' 'mental' 'refineries' 'prescribed'
+ 'temperatures' 'widens' 'satisfactory' 'refineries' 'prescribed'
+ 'refined' 'widens' 'mental' 'refineries' 'prescribed' 'equivalents'
+ 'widens' 'satisfactory' 'refineries' 'widens' 'satisfactory' 'refineries'
+ 'overseeing' 'midyear' 'erosion' 'refined' 'widens' 'artificially'
+ 'refined' 'morale' 'widens' 'artificially' 'refined' 'morale' 'widens'
+ 'artificially' 'refined']
+
+sentence 31:
+['unk' 'unk' 'unk' 'unk' '<sos>' ' ' 'separately' 'backer' 'middlemen'
+ 'illustrate' 'streamlining' 'messages' 'suggesting' 'incomplete'
+ 'middlemen' 'owed' 'misleading' 'hands' 'owed' 'below' 'improvements'
+ 'usage' 'owed' 'abroad' 'abroad' 'abroad' 'donoghue' 'conspired' 'widens'
+ 'finishing' 'exclusively' 'abroad' 'donoghue' 'conspired' 'prescribed'
+ 'donoghue' 'refineries' 'respectively' 'abroad' 'abroad' 'billing'
+ 'middlemen' 'owed' 'below' 'severance' 'fluctuations' 'abroad' 'donoghue'
+ 'conspired' 'receives']
+
+sentence 32:
+['designated' 'privately' 'privately' 'privately' 'privately' 'privately'
+ 'privately' 'cent' 'cent' 'float' 'cent' 'cent' 'cent' 'cent' 'cent'
+ 'matched' 'cent' 'offs' 'cent' 'offs' 'cent' 'cent' 'cent' 'offs' 'cent'
+ 'cent' 'cent' 'cent' 'offs' 'cent' 'inch' 'cent' 'cent' 'inch' 'cent'
+ 'inch' 'inch' 'inch' 'simple' 'inch' 'cent' 'cent' 'accumulated'
+ 'whichever' 'whichever' 'salvage' 'offs' 'widens' 'cent' 'matched']
+
+#####################################
+Generates words based on Ground Truth:
+######################################
+
+----- Ground Truth sequences: ------
+
+sentence 1:
+['<sos>' ' ' 'the' 'rtc' 'had' 'previously' 'targeted' 'five' 'thrifts'
+ 'for' 'quick' 'sales' 'in' 'order' 'to' 'spend' 'cash' 'by' 'certain'
+ 'budgetary' 'deadlines' 'but' 'the' 'delays' 'illustrate' 'the' 'tough'
+ '<' 'unk' '>' 'facing' 'the' 'agency' '
+
+sentence 2:
+['<sos>' ' ' 'negotiators' 'from' 'the' 'white' 'house' 'trade' 'office'
+ 'will' 'repeat' 'these' 'quota' 'negotiations' 'next' 'year' 'when'
+ 'they' 'will' 'have' 'another' 'n' 'n' 'of' 'the' 'u.s' '.' 'steel'
+ 'market' 'to' '<' 'unk' '>' '
+
+sentence 3:
+['<sos>' ' ' 'when' 'you' 'see' 'a' 'runaway' 'train' 'says' 'steve' '<'
+ 'unk' '>' 'partner' 'in' 'the' 'san' 'francisco' 'investment' 'advisory'
+ 'firm' 'brouwer' '&' '<' 'unk' '>' 'you' 'wait' 'for' 'the' 'train' 'to'
+ 'stop' '
+
+sentence 4:
+['<sos>' ' ' 'house' 'budget' 'committee' 'chairman' 'leon' '<' 'unk' '>'
+ 'd.' 'calif' 'said' 'in' 'an' 'interview' 'if' 'that' "'s" 'the' 'signal'
+ 'that' 'comes' 'from' 'the' 'white' 'house' 'that' 'will' 'help' 'a'
+ 'great' 'deal' '
+
+sentence 5:
+['<sos>' ' ' 'ibm' 'is' 'expected' 'to' 'respond' 'to' 'tandem' "'s" '<'
+ 'unk' '>' 'by' 'discounting' 'its' 'own' 'mainframes' 'which' 'analysts'
+ 'say' 'are' 'roughly' 'three' 'times' 'the' 'price' 'of' 'a' 'comparable'
+ 'system' 'from' 'tandem' '
+
+sentence 6:
+['<sos>' ' ' 'that' 'is' 'a' 'much' 'easier' 'standard' 'for' 'a' 'state'
+ 'to' 'satisfy' 'than' 'the' 'supreme' 'court' "'s" 'test' 'since' 'n'
+ 'which' 'requires' 'a' 'state' 'to' 'have' 'a' 'compelling' 'reason'
+ 'for' 'restricting' 'abortion' '
+
+sentence 7:
+['<sos>' ' ' 'a' 'celebrity' 'guest' 'u.s' '.' 'ambassador' 'to' 'west'
+ 'germany' 'richard' 'burt' 'also' 'won' 'a' 'bet' 'that' 'someone'
+ 'could' 'pile' 'up' '$' 'n' 'worth' 'of' 'quarters' 'on' 'a' '<' 'unk'
+ '>' 'coin' '
+
+sentence 8:
+['<sos>' ' ' 'the' 'aircraft' 'would' 'replace' 'the' '<' 'unk' '>' 'made'
+ 'by' 'the' '<' 'unk' '>' 'aircraft' 'co.' 'unit' 'of' 'general'
+ 'dynamics' 'corp' '.' 'which' 'the' 'air' 'force' 'uses' 'to' 'train'
+ 'jet' 'pilots' '
+
+sentence 9:
+['<sos>' ' ' 'nasa' '<' 'unk' '>' 'the' 'space' 'shuttle' 'atlantis'
+ 'ready' 'for' 'launch' 'tomorrow' 'following' 'a' '<' 'unk' '>' '<' 'unk'
+ '>' 'of' 'the' 'flight' 'because' 'of' 'a' '<' 'unk' '>' 'engine'
+ 'computer' '
+
+sentence 10:
+['<sos>' ' ' 'they' 'may' 'also' 'eventually' 'sell' 'the' 'shares' 'to'
+ 'third' 'parties' 'but' 'the' 'outside' 'investors' 'who' 'own' 'the'
+ 'remaining' 'n' 'n' 'of' '<' 'unk' '>' 'banker' 'have' 'the' 'right' 'to'
+ 'first' 'refusal' '
+
+sentence 11:
+['<sos>' ' ' 'in' 'a' 'similar' '<' 'unk' '>' 'he' 'adds' 'that' 'the'
+ 'anniversary' 'of' 'the' 'n' 'crash' 'and' 'saturday' "'s" 'full' 'moon'
+ 'could' 'have' 'played' 'a' 'part' 'too' 'in' 'friday' "'s" 'market'
+ 'activity' '
+
+sentence 12:
+['<sos>' ' ' 'the' 'group' 'said' 'it' 'would' 'consider' 'among' 'other'
+ 'things' '<' 'unk' '>' 'royalty' 'payments' 'and' '<' 'unk' '>' 'a'
+ 'class' '-' 'action' 'lawsuit' 'seeking' 'court' 'approval' 'for' 'the'
+ '<' 'unk' '>' '
+
+sentence 13:
+['<sos>' ' ' 'if' 'you' 'bought' 'after' 'the' 'crash' 'you' 'did' 'very'
+ 'very' 'well' 'off' 'the' 'bottom' 'said' 'stephen' 'b.' '<' 'unk' '>'
+ 'chief' 'investment' 'officer' 'of' 'chicago' '-' 'based' 'kemper'
+ 'financial' 'services' 'inc' '
+
+sentence 14:
+['<sos>' ' ' 'or' 'so' 'it' 'must' 'seem' 'to' '<' 'unk' '>' 'mason' 'the'
+ 'veteran' 'jewish' '<' 'unk' '>' 'appearing' 'in' 'a' 'new' 'abc' '<'
+ 'unk' '>' 'airing' 'on' 'tuesday' 'nights' 'n' 'p.m.' 'edt' '
+
+sentence 15:
+['<sos>' ' ' 'the' 'democratic' 'leadership' 'council' 'a' '<' 'unk' '>'
+ 'group' '<' 'unk' '>' 'the' 'plan' 'surely' 'thought' 'it' 'might' 'help'
+ 'the' 'party' 'to' 'attract' 'support' 'especially' 'among' 'college'
+ 'students' 'and' 'their' 'parents' '
+
+sentence 16:
+['<sos>' ' ' 'also' '<' 'unk' '>' 'was' 'a' '<' 'unk' '>' 'increase' 'in'
+ 'the' 'maximum' '<' 'unk' '>' 'safety' 'and' 'health' 'administration'
+ 'penalties' 'which' 'would' 'have' 'raised' '$' 'n' 'million' 'in'
+ 'fiscal' 'n' '
+
+sentence 17:
+['<sos>' ' ' 'treasury' 'undersecretary' 'david' 'mulford' 'for'
+ 'instance' 'was' 'at' 'a' 'meeting' 'of' 'the' 'business' 'council' 'in'
+ 'hot' 'springs' 'va' '.' 'when' 'the' 'stock' 'market' 'fell' 'and'
+ 'remained' 'there' 'through' 'the' 'following' 'day' '
+
+sentence 18:
+['<sos>' ' ' 'the' 'fed' 'which' 'until' 'friday' 'had' 'been' '<' 'unk'
+ '>' 'moves' 'to' 'ease' 'credit' 'is' 'now' 'poised' 'to' 'pour' 'money'
+ 'into' 'the' 'economy' 'if' 'needed' 'to' '<' 'unk' '>' 'the' 'markets'
+ '
+
+sentence 19:
+['<sos>' ' ' 'however' 'it' 'gave' 'the' 'shareholders' 'the' 'right' 'to'
+ 'pursue' 'a' 'small' 'portion' 'of' 'their' 'claim' 'that' '<' 'unk' '>'
+ 'to' '<' 'unk' '>' "'s" 'disk' 'drive' 'known' 'as' '<' 'unk' '>' '
+
+sentence 20:
+['<sos>' ' ' 'and' 'justin' 'in' 'a' 'news' 'release' 'says' 'once'
+ 'competitive' 'sony' 'now' 'resorts' 'to' '<' 'unk' '>' 'tactics' 'in'
+ 'american' '<' 'unk' '>' 'to' '<' 'unk' '>' 'out' 'and' 'protect' 'niche'
+ 'markets' '
+
+sentence 21:
+['<sos>' ' ' 'during' 'last' 'week' "'s" '<' 'unk' '>' 'on' 'the' '<'
+ 'unk' '>' 'bill' 'and' 'the' 'capital' '-' 'gains' 'issue' 'there' 'were'
+ 'signs' 'that' 'senate' 'republicans' 'and' 'the' 'administration' 'were'
+ 'at' 'odds' '
+
+sentence 22:
+['<sos>' ' ' 'oh' 'i' 'bet' 'it' "'ll" 'be' 'up' 'n' 'points' 'on'
+ 'monday' 'said' '<' 'unk' '>' '<' 'unk' '>' 'a' '<' 'unk' '>' 'retired'
+ '<' 'unk' '>' 'in' 'lexington' '<' 'unk' '>' '
+
+sentence 23:
+['<sos>' ' ' 'each' 'time' 'the' 'court' '<' 'unk' '>' 'an' 'issue' 'the'
+ 'justices' 'will' 'be' 'forced' 'by' 'a' 'dissent' 'to' 'reconsider'
+ 'the' 'fundamental' 'questions' 'and' 'to' '<' 'unk' '>' 'the' 'result'
+ 'he' 'said' '
+
+sentence 24:
+['<sos>' ' ' 'television' 'which' 'most' 'of' 'the' 'time' 'is'
+ 'considered' 'rather' '<' 'unk' '>' 'has' 'entered' 'the' 'running'
+ 'with' 'a' 'new' 'program' 'the' 'end' 'of' 'the' 'day' 'which' 'comes'
+ 'on' 'after' 'n' 'p.m' '
+
+sentence 25:
+['<sos>' ' ' 'through' 'a' 'venture' 'with' 'its' 'investment' 'banker'
+ 'first' 'boston' 'corp' '.' 'quantum' 'completed' 'in' 'august' 'an'
+ 'acquisition' 'of' '<' 'unk' '>' 'inc' '.' 'in' 'a' 'transaction'
+ 'valued' 'at' '$' 'n' 'billion' '
+
+sentence 26:
+['<sos>' ' ' 'for' 'one' 'thing' 'even' 'with' 'many' 'farmers' '<' 'unk'
+ '>' 'more' 'winter' 'wheat' 'this' 'year' 'than' 'last' 'tight' 'wheat'
+ 'supplies' 'are' 'likely' 'to' 'support' 'prices' 'well' 'into' 'n' 'the'
+ 'analysts' 'say' '
+
+sentence 27:
+['<sos>' ' ' 'in' 'congress' 'the' 'issue' '<' 'unk' '>' 'it' "'s" 'about'
+ 'money' 'not' 'program' 'quality' 'and' 'hollywood' 'has' 'lots' 'of'
+ 'clout' 'given' 'its' 'fund' 'raising' 'for' 'senators' 'and'
+ 'representatives' 'overseeing' 'the' 'issue' '
+
+sentence 28:
+['<sos>' ' ' 'raising' 'an' 'additional' '$' 'n' 'million' 'by'
+ 'increasing' 'existing' 'federal' 'communications' 'commission' 'fees'
+ 'and' 'penalties' 'and' 'establishing' 'new' 'fees' 'for' '<' 'unk' '>'
+ 'radio' 'operators' 'ship' 'stations' 'and' 'mobile' 'radio' 'facilities'
+ '
+
+sentence 29:
+['<sos>' ' ' 'u.s' '.' 'car' 'and' 'truck' 'sales' 'fell' 'n' 'n' 'in'
+ 'early' 'october' 'the' 'first' 'sales' 'period' 'of' 'the' '<' 'unk' '>'
+ 'year' 'dragged' 'down' 'by' 'a' 'sharp' 'decline' 'in' 'gm' 'sales'
+ '
+
+sentence 30:
+['<sos>' ' ' 'studios' 'are' '<' 'unk' '>' 'to' 'get' 'shows' 'in' 'prime'
+ '-' 'time' '<' 'unk' '>' 'and' 'keep' 'them' 'there' 'long' 'enough' 'to'
+ 'go' 'into' 'lucrative' '<' 'unk' '>' 'sales' 'he' 'contends' '
+
+sentence 31:
+['<sos>' ' ' 'ibm' 'is' 'backing' 'one' 'type' 'of' 'bus' 'called' '<'
+ 'unk' '>' 'while' 'the' 'nine' 'other' 'leading' 'computer' 'makers'
+ 'including' '<' 'unk' '>' 'and' 'compaq' 'computer' 'corp' '.' 'have'
+ 'chosen' 'another' 'method' '
+
+sentence 32:
+['<sos>' ' ' 'but' 'despite' 'the' 'recent' 'softening' 'for' 'many' 'of'
+ 'these' 'retailers' 'there' "'s" 'still' 'been' 'too' 'big' 'a' 'jump'
+ 'from' 'the' 'rental' 'rates' 'of' 'the' 'late' '1970s' 'when' 'their'
+ 'leases' 'were' 'signed' '
+
+----- Generated sequences: ------
+
+sentence 1:
+[' ' 'the' 'company' "'s" 'been' 'been' '<' '<' 'to' 'the' '<' 'and' 'the'
+ 'to' '<' '$' 'in' '$' '<' '<' '<eos>' 'it' '<' 'are' 'the' 'market' '<'
+ 'unk' '>' 'of' 'the' '<' '<eos>']
+
+sentence 2:
+[' ' 'the' 'are' 'the' '<' 'house' "'s" 'committee' 'of' 'be' 'the' '<'
+ 'and' 'with' 'year' '<eos>' 'the' 'have' 'be' 'to' '<' 'n' 'stake' 'the'
+ 'company' '.' 'and' '<eos>' '<eos>' 'the' 'unk' '>' 'the']
+
+sentence 3:
+[' ' 'the' 'the' 'have' 'the' 'lot' '<' '<' 'mr' '<' 'unk' '>' 'a' 'the'
+ 'the' '<' 'francisco' 'bay' 'journal' 'committee' '<' 'the' 'co.' 'unk'
+ '>' '<' 'have' 'to' 'the' '<' '<' '<' 'the']
+
+sentence 4:
+[' ' 'the' '-' 'committee' 'chairman' 'and' '<' 'unk' '>' '<' '<' '.'
+ 'the' 'the' 'interview' 'that' 'he' 'the' '<' '<' 'of' 'the' 'to' 'the'
+ '<' 'house' "'s" 'the' 'be' 'the' '<' '<' 'in']
+
+sentence 5:
+[' ' 'the' 'said' "n't" 'to' 'be' 'to' 'the' 'operations' '<' 'unk' '>'
+ 'and' 'moody' '<eos>' '<' '<' '<eos>' 'is' 'say' 'is' '<' 'about' 'times'
+ 'as' 'company' 'of' 'the' '$' 'price' '<eos>' 'the' 'investors']
+
+sentence 6:
+[' ' 'the' "'s" "n't" '<' 'of' 'to' 'to' 'the' '<' 'of' '<' 'the' 'the'
+ '<' 'court' "'s" '<' '<eos>' 'the' '<eos>' 'has' 'a' '<' 'of' 'the' 'a'
+ '<' '<' '<eos>' 'the' 'the' '<eos>']
+
+sentence 7:
+[' ' 'the' 'year' '<' '<' '.' 'attorney' 'to' 'the' 'germany' '<eos>' '<'
+ '<eos>' 'said' 'a' '<' 'that' 'the' 'was' "n't" 'a' 'to' 'n' 'a' 'of'
+ 'the' '<eos>' 'the' '<' 'unk' '>' '<' '<eos>']
+
+sentence 8:
+['of' 'the' '<' 'to' 'be' 'the' '<' 'unk' '>' '<' 'by' 'the' '<' 'unk' '>'
+ 'of' '<eos>' 'of' '<eos>' '<' 'motors' 'corp' '.' "'s" 'has' 'company'
+ 'department' '<' 'n' '<' '<' 'the' "'"]
+
+sentence 9:
+[' ' 'the' 'said' 'unk' '>' 'the' '<' '<' '<' '<' 'to' 'the' 'and' '<eos>'
+ 'the' '<' 'unk' '>' '<' 'unk' '>' '<' '<' '<' '<eos>' 'of' 'the' '<'
+ 'unk' '>' '<' '<eos>' '<eos>']
+
+sentence 10:
+[' ' 'the' 'are' 'have' 'have' '<eos>' 'the' '<' 'of' 'the' '-' '<eos>'
+ 'the' 'company' 'of' 'are' 'have' 'the' '<' 'n' 'n' 'of' 'the' 'unk' '>'
+ "'s" '<eos>' 'been' '<' 'to' '<' '<' '<eos>']
+
+sentence 11:
+[' ' 'the' 'the' '<' '<' 'unk' '>' '<' 'says' 'the' 'the' '<' 'of' 'the'
+ '<' '<' 'is' 'the' '<' '<' '-' '<' "n't" 'a' 'a' '<' 'of' '<' 'the' "'s"
+ '<' '<eos>' '<eos>']
+
+sentence 12:
+[' ' 'the' 'company' 'is' 'it' 'expects' "n't" 'the' 'the' 'things' 'to'
+ 'unk' '>' '<' '<' '<eos>' '<' 'unk' '>' 'to' '<' 'of' 'loss' '<' '<eos>'
+ 'to' '<eos>' '<eos>' 'the' '<' 'unk' '>' '<']
+
+sentence 13:
+['<eos>' 'the' 'the' 'have' 'the' 'the' '<' 'it' 'do' "n't" 'much' '<'
+ '<eos>' '<eos>' '<' 'of' '<' '<' '<' 'unk' '>' '<eos>' 'executive'
+ 'strategist' 'of' 'the' '<eos>' 'based' '<' '&' 'corp' 'inc' '<eos>']
+
+sentence 14:
+[' ' 'the' 'the' 'far' "'s" 'be' 'to' 'be' 'unk' '>' 'the' '<' '<' 'of'
+ '<' 'unk' '>' 'the' 'in' 'the' '<' 'york' 'area' 'unk' '>' '<' 'of' 'the'
+ "'s" '<eos>' 'n' 'a' 'in']
+
+sentence 15:
+['to' 'the' '<' 'union' 'is' 'of' '<' 'unk' '>' '<' 'is' 'unk' '>' '<' '<'
+ 'to' '<' 'that' 'was' 'be' 'be' '<' "'s" '<' '<' '<eos>' '<eos>' 'the'
+ '<' '<eos>' '<' 'own' '<eos>']
+
+sentence 16:
+[' ' 'the' 'the' 'unk' '>' '<' 'a' '<' 'unk' '>' '<' 'in' 'the' '<' 'of'
+ 'unk' '>' 'of' 'and' '<' '-' '<eos>' '<eos>' 'is' 'be' 'been' 'the' 'n'
+ 'million' 'in' 'cash' 'n' '<eos>']
+
+sentence 17:
+[' ' 'the' 'bonds' '<eos>' '<' '<eos>' 'the' 'is' "n't" 'the' '<' '<eos>'
+ '<' '<' 'board' '<eos>' 'the' 'of' '<eos>' '<eos>' 'and' 'the' 'company'
+ 'market' "'s" 'to' 'the' '<' '<eos>' 'the' 'past' 'of' '<eos>']
+
+sentence 18:
+[' ' 'the' 'company' 'is' 'is' 'n' "'s" 'a' '<' 'unk' '>' 'by' 'by' 'the'
+ 'the' '-' 'a' '<' 'to' '<' 'the' '<eos>' 'the' '<' '<eos>' 'the' 'to'
+ 'be' 'unk' '>' 'the' 'market' '<eos>']
+
+sentence 19:
+[' ' 'the' 'the' "'s" 'the' '<' 'to' '<' 'to' '<' '<' '<' '<' 'of' 'the'
+ '<' '<eos>' 'the' 'unk' '>' '<' 'the' 'unk' '>' '<' '<' '-' 'and' 'as'
+ '<' 'unk' '>' '<']
+
+sentence 20:
+[' ' 'the' 'the' '<' 'the' '<' 'conference' 'of' 'mr' '<' '<' "'s" 'has'
+ 'for' '<' 'unk' '>' 'the' 'of' 'the' 'america' 'unk' '>' '<eos>' '<'
+ 'unk' '>' 'the' 'the' '<' 'the' '<eos>' '<eos>']
+
+sentence 21:
+[' ' 'the' 'the' 'year' "'s" 'earthquake' 'unk' '>' '<' 'the' '<' 'unk'
+ '>' 'of' 'the' 'the' '<' '-' 'gains' 'tax' 'is' 'is' 'no' 'of' 'the' '<'
+ 'are' 'the' '<' 'is' '<' 'the' 'with']
+
+sentence 22:
+[' ' 'the' 'the' "'" 'that' 'is' 'be' 'a' 'for' 'n' '<eos>' 'the' '<eos>'
+ 'mr' 'unk' '>' '<' 'unk' '>' 'a' '<' 'unk' '>' 'analyst' 'analyst' 'unk'
+ '>' '<' 'the' '<eos>' 'unk' '>' '<eos>']
+
+sentence 23:
+[' ' 'the' '$' 'the' '<' 'is' 'unk' '>' 'the' '<' 'of' '<' 'said' 'be' '<'
+ 'to' 'the' '<' 'of' '<' 'the' '<' '<' '<eos>' 'the' '<' 'unk' '>' 'the'
+ '<' 'of' 'said' '<eos>']
+
+sentence 24:
+[' ' 'the' '<' 'has' 'of' 'the' '<' 'were' '<' 'a' 'than' 'unk' '>' 'and'
+ 'been' 'a' '<' 'for' 'the' '<' '<' 'for' '<' 'of' 'the' 'year' '<eos>'
+ 'are' 'to' 'the' 'the' '<eos>' '<eos>']
+
+sentence 25:
+[' ' 'the' 'the' '<' "'s" 'the' '<' 'and' '<' 'boston' 'said' '.' "'s"
+ 'is' 'the' 'n' 'and' '<' 'of' '<' 'unk' '>' '<' '.' 'a' 'new' '<' 'that'
+ 'at' '$' 'n' 'million' '<eos>']
+
+sentence 26:
+[' ' 'the' 'the' 'thing' 'the' 'if' 'the' 'people' 'who' 'unk' '>' 'and'
+ 'than' 'and' 'and' 'year' "'s" 'the' 'week' "'s" "'s" 'of' "n't" 'to'
+ 'be' 'the' '<eos>' '<eos>' 'the' '<eos>' 'company' 'said' '<eos>']
+
+sentence 27:
+[' ' 'the' 'the' 'the' 'company' 'was' 'unk' '>' 'the' 'is' 'a' '$' 'to'
+ 'to' 'trading' '<eos>' 'the' '<' 'been' 'of' '<' '<eos>' 'the' '<'
+ '<eos>' 'the' 'the' 'who' '<' 'of' 'the' '<' '<eos>']
+
+sentence 28:
+[' ' 'the' 'the' '<' 'n' 'n' 'in' 'in' 'the' 'the' '<' 'funds' 'and'
+ 'which' 'and' '<' 'from' '<' 'a' '<' 'to' 'the' 'unk' '>' '<' '<' '<eos>'
+ '<eos>' '<eos>' '<' '<' '<eos>' '<eos>']
+
+sentence 29:
+[' ' 'the' '.' 'officials' 'makers' '<' '<' 'have' 'n' 'n' 'to' 'the'
+ 'trading' '<eos>' 'company' 'half' 'of' 'of' 'n' 'year' 'unk' '>' 'of'
+ '<eos>' 'by' 'from' 'a' 'n' 'rise' 'in' 'the' "'s" '<eos>']
+
+sentence 30:
+[' ' 'the' "'s" "n't" 'unk' '>' '<eos>' '<' 'a' 'by' 'the' '-' 'time' '<'
+ 'unk' '>' '<eos>' '<' '<' '<eos>' '<eos>' '<eos>' 'to' 'be' 'out' 'the'
+ '<eos>' 'unk' '>' '<eos>' '<eos>' 'said' '<eos>']
+
+sentence 31:
+[' ' 'the' "'s" 'a' 'up' 'of' 'of' '<' 'the' 'the' 'unk' '>' '<' 'the'
+ 'company' '-' '<' '<' 'makers' 'are' 'the' 'unk' '>' '<' '<' "'s" 'corp'
+ '.' 'said' 'been' 'to' '<' 'of']
+
+sentence 32:
+['to' 'the' 'the' 'the' '<' '<' 'of' 'the' 'of' 'the' 'issues' 'have'
+ 'are' 'a' 'a' 'a' 'much' '<eos>' '<' 'in' 'the' 'market' 'market' '<eos>'
+ 'the' '<' '1970s' '<eos>' 'the' '<' 'is' "n't" 'by']
