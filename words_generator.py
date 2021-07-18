@@ -36,16 +36,19 @@ def generate_words(empty_model, batch_size, vocab, dl_test):
     generating_by_Ground_Truth(batch_size, gt_batch, init_c0, init_h0, model, vocab)
 
     # Case C: Generates by Beam-Search
+
+    # initialize sequence that starts with <SOS>
     init_words = torch.randint(4, len(vocab) - 1, (1, 1)).to(DEVICE)
+    init_words[:, :] = 2
     init_h0 = torch.randn(layers, 1, hidden_size).to(DEVICE)
     init_c0 = torch.randn(layers, 1, hidden_size).to(DEVICE)
 
-    # generating_by_beam_search(MAX_GEN_SEQ_LENGTH, batch_size, model, vocab, init_words, init_h0, init_c0)
+    generating_by_beam_search(MAX_GEN_SEQ_LENGTH, batch_size, model, vocab, init_words, init_h0, init_c0)
 
 
 def generating_by_beam_search(max_gen_seq_length, batch_size, model, vocab, init_words, init_h0, init_c0):
     print("\nGenerates words based on Beam search: \n")
-    BEAM_WIDTH = 10
+    BEAM_WIDTH = 5
     # Write generated sequences to file
     with open('generated_sequences.txt', 'a+', encoding="utf8") as f:
         f.write('\n####################################\n')
@@ -53,7 +56,7 @@ def generating_by_beam_search(max_gen_seq_length, batch_size, model, vocab, init
         f.write('#####################################\n')
         for i in range(batch_size):
             tokenized_gen_words = beam_search(max_gen_seq_length, model, BEAM_WIDTH, init_words, init_h0, init_c0)
-            print("x")
+
             # Untokenize the generated sequence:
             for j in range(len(tokenized_gen_words)):
                 tokenized_gen_words[j] = vocab.itos[tokenized_gen_words[j]]

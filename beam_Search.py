@@ -62,7 +62,7 @@ def beam_search(max_gen_seq_length, model, beam_width, init_words, init_h0, init
             ith_words = model(x, "beam_search", init_h0, init_c0)
             ith_words = ith_words[-1, :, :]  # only the last Y is relevant...
             ith_words = torch.unsqueeze(ith_words, 0)  # retrieve the 1st dimension lost from previous line ^
-            first_words_probabilities = softmax(ith_words)
+            ith_words_probabilities = softmax(ith_words)
 
             # Create beam search_objects according to scores, and insert to heap
             for j in range(vocab_length):
@@ -70,7 +70,7 @@ def beam_search(max_gen_seq_length, model, beam_width, init_words, init_h0, init
                 tokenized_word = q_node.tokenized_words + [j]
 
                 # adjust current score with previous scores
-                word_prob = q_node.log_prob + first_words_probabilities[0, 0, j]
+                word_prob = q_node.log_prob + ith_words_probabilities[0, 0, j]
 
                 new_node = BeamSearchNode(word_prob, tokenized_word)
                 heapq.heappush(heap, new_node)

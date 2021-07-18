@@ -74,7 +74,7 @@ class LSTM_Predictor(nn.Module):
             embedded = self.embedding(x)
 
             # Run through the LSTMs with initial vecotrs
-            output, (h_t, c_t) = self.lstm(embedded, (initial_vec_h0, initial_vec_c0))
+            output, _ = self.lstm(embedded, (initial_vec_h0, initial_vec_c0))
 
             # Project H back to the vocab size V, to get a score per word
             output = nn.functional.relu(output)
